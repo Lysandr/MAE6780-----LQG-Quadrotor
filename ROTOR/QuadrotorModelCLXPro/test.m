@@ -44,7 +44,12 @@ plot(rotorspeed.Time, rotorspeed.Data);hold on;
 plot(V1(:,1),V1(:,2))
 title('rotorspeed vs time')
 
-
+figure; subplot(3,1,1)
+plot(state.Time, state.Data(:,4)); title('Phi vs time')
+subplot(3,1,2)
+plot(state.Time, state.Data(:,5)); title('Theta vs time')
+subplot(3,1,3)
+plot(state.Time, state.Data(:,6)); title('Psi vs time')
 
 
 

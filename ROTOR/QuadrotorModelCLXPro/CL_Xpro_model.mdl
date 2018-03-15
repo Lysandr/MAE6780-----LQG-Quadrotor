@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.19"
+    ComputedModelVersion    "1.21"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -45,7 +45,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-5.0, 0.0, 970.0, 1045.0]
+      Location		      [-7.0, 0.0, 974.0, 1047.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -68,10 +68,10 @@ Model {
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
 	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"130"
-	Extents			[1844.0, 1772.0]
+	LoadSaveID		"139"
+	Extents			[920.0, 866.0]
 	ZoomFactor		[1.25]
-	Offset			[-6.5190541087776355, -7.8961451644741159]
+	Offset			[-13.60000000000006, -50.759435536474207]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -84,18 +84,18 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[320]
-	Height			[240]
+	Width			[640]
+	Height			[480]
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAC+AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAATwD///8AAAd6AAAHTwAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAO+AAADmwAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAADb/////wAAAAAAAAAA/////wEAAAGG/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAJh/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAVt/////wAAAAAAAAAA/"
-      "////wEAAAXC/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAL9/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   HideAutomaticNames	  on
@@ -105,9 +105,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Padraig Lysandrou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Mar 14 12:03:23 2018"
-  RTWModifiedTimeStamp	  442887436
-  ModelVersionFormat	  "1.%<AutoIncrement:19>"
+  LastModifiedDate	  "Wed Mar 14 22:44:04 2018"
+  RTWModifiedTimeStamp	  442951958
+  ModelVersionFormat	  "1.%<AutoIncrement:21>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1191,7 +1191,7 @@ Model {
   }
   System {
     Name		    "CL_Xpro_model"
-    Location		    [533, 0, 1925, 1045]
+    Location		    [-7, 0, 967, 1047]
     Open		    off
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
@@ -1218,7 +1218,7 @@ Model {
       Variant		      off
       System {
 	Name			"CL X-Pro"
-	Location		[-5, 0, 965, 1045]
+	Location		[-7, 0, 967, 1047]
 	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
@@ -1278,7 +1278,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Body dynamics"
-	    Location		    [-5, 0, 1446, 1045]
+	    Location		    [-7, 0, 967, 1047]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
@@ -1291,7 +1291,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "175"
+	    ZoomFactor		    "125"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "U1"
@@ -1681,7 +1681,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"Roll Stability"
-		Location		[-5, 0, 1401, 1045]
+		Location		[-7, 0, 967, 1047]
 		Open			off
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
@@ -1694,7 +1694,7 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"150"
+		ZoomFactor		"125"
 		Block {
 		  BlockType		  Inport
 		  Name			  "SumXRtrSpd"
@@ -1734,7 +1734,7 @@ Model {
 		  BlockType		  Gain
 		  Name			  "Gain1"
 		  SID			  "35"
-		  Position		  [455, 219, 545, 271]
+		  Position		  [465, 194, 555, 246]
 		  ZOrder		  -5
 		  BlockMirror		  on
 		  ShowName		  off
@@ -1927,7 +1927,7 @@ Model {
 		    Points		    [0, 45]
 		    Branch {
 		    ZOrder		    12
-		    Points		    [0, 75]
+		    Points		    [0, 50]
 		    DstBlock		    "Gain1"
 		    DstPort		    1
 		    }
@@ -1961,7 +1961,7 @@ Model {
 		  ZOrder		  17
 		  SrcBlock		  "Gain1"
 		  SrcPort		  1
-		  Points		  [-5, 0]
+		  Points		  [-15, 0]
 		  DstBlock		  "Sum9"
 		  DstPort		  4
 		}
@@ -1982,11 +1982,12 @@ Model {
 		}
 		Annotation {
 		  SID			  "253"
-		  Name			  "WHAT IS THIS???"
-		  Position		  [458, 291, 542, 305]
+		  Name			  "this is some inertial drag thing"
+		  Position		  [479, 264, 612, 278]
 		  InternalMargins	  [0, 0, 0, 0]
 		  HorizontalAlignment	  "left"
 		  VerticalAlignment	  "top"
+		  ZOrder		  -1
 		}
 		Annotation {
 		  SID			  "46"
@@ -2308,7 +2309,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"gibanje u prostoru"
-		Location		[-5, 0, 1446, 1045]
+		Location		[-8, -8, 1928, 1048]
 		Open			off
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
@@ -3827,8 +3828,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Motor dynamics"
-	    Location		    [-5, 0, 965, 1045]
-	    Open		    on
+	    Location		    [-7, 0, 967, 1047]
+	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -3929,8 +3930,8 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"Motor/Rotor1"
-		Location		[-5, 0, 965, 1045]
-		Open			off
+		Location		[-7, 0, 967, 1047]
+		Open			on
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
@@ -5484,7 +5485,7 @@ Model {
 	      ZOrder		      32
 	      SrcBlock		      "Motor/Rotor1"
 	      SrcPort		      2
-	      Points		      [0, 0; 10, 0]
+	      Points		      [10, 0]
 	      Branch {
 		ZOrder			33
 		Points			[0, 35; -120, 0; 0, 20]
@@ -5643,6 +5644,7 @@ Model {
 	      InternalMargins	      [0, 0, 0, 0]
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
+	      ZOrder		      -1
 	    }
 	    Annotation {
 	      SID		      "251"
@@ -5651,6 +5653,7 @@ Model {
 	      InternalMargins	      [0, 0, 0, 0]
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
+	      ZOrder		      -2
 	    }
 	    Annotation {
 	      SID		      "250"
@@ -5659,6 +5662,7 @@ Model {
 	      InternalMargins	      [0, 0, 0, 0]
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
+	      ZOrder		      -3
 	    }
 	    Annotation {
 	      SID		      "249"
@@ -5667,6 +5671,7 @@ Model {
 	      InternalMargins	      [0, 0, 0, 0]
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
+	      ZOrder		      -4
 	    }
 	    Annotation {
 	      SID		      "248"
@@ -5675,6 +5680,7 @@ Model {
 	      InternalMargins	      [0, 0, 0, 0]
 	      HorizontalAlignment     "left"
 	      VerticalAlignment	      "top"
+	      ZOrder		      -5
 	    }
 	    Annotation {
 	      SID		      "220"
@@ -6039,7 +6045,6 @@ Model {
       ZOrder		      8
       SrcBlock		      "CL X-Pro"
       SrcPort		      1
-      Points		      [40, 0]
       DstBlock		      "Mux"
       DstPort		      1
     }
