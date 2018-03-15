@@ -51,7 +51,11 @@ plot(state.Time, state.Data(:,5)); title('Theta vs time')
 subplot(3,1,3)
 plot(state.Time, state.Data(:,6)); title('Psi vs time')
 
-
+figure; 
+plot(testvoltage.Time, testvoltage.Data);hold on;
+plot(V1(:,1),V1(:,2))
+title('My Derivative vs Real Input')
+legend('testVoltage','input')
 
 
 
