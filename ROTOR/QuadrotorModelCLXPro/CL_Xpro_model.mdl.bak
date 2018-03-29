@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.77"
+    ComputedModelVersion    "1.78"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -87,7 +87,7 @@ Model {
 	  LoadSaveID		  "130"
 	  Extents		  [1882.0, 872.0]
 	  ZoomFactor		  [1.25]
-	  Offset		  [-362.40823776445797, -11.999999999999963]
+	  Offset		  [-362.40823776445797, -11.999999999999943]
 	}
 	Object {
 	  $ObjectID		  7
@@ -104,8 +104,8 @@ Model {
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1"
 	  Extents		  [1882.0, 872.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [-635.46810578990517, 3.2953941354020415]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-653.12358827064236, -11.515790050527581]
 	}
 	PropName		"EditorsInfo"
       }
@@ -141,9 +141,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Padraig Lysandrou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Mar 16 10:48:15 2018"
-  RTWModifiedTimeStamp	  443031416
-  ModelVersionFormat	  "1.%<AutoIncrement:77>"
+  LastModifiedDate	  "Sat Mar 17 13:33:01 2018"
+  RTWModifiedTimeStamp	  443136506
+  ModelVersionFormat	  "1.%<AutoIncrement:78>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1274,7 +1274,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"150"
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Angular Rate to Voltage Level"
@@ -2085,7 +2085,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"reverseR4"
-		Location		[-6, -6, 1927, 1047]
+		Location		[-8, -8, 1928, 1048]
 		Open			on
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
@@ -5033,7 +5033,7 @@ Model {
 	  BlockType		  FromWorkspace
 	  Name			  "From\nWorkspace1"
 	  SID			  "667"
-	  Position		  [-115, 168, -50, 192]
+	  Position		  [-115, 148, -50, 172]
 	  ZOrder		  245
 	  VariableName		  "V1"
 	  SampleTime		  "0"
@@ -5043,7 +5043,7 @@ Model {
 	  BlockType		  FromWorkspace
 	  Name			  "From\nWorkspace2"
 	  SID			  "668"
-	  Position		  [-115, 198, -50, 222]
+	  Position		  [-115, 188, -50, 212]
 	  ZOrder		  246
 	  VariableName		  "V2"
 	  SampleTime		  "0"
@@ -5063,7 +5063,7 @@ Model {
 	  BlockType		  FromWorkspace
 	  Name			  "From\nWorkspace4"
 	  SID			  "670"
-	  Position		  [-115, 258, -50, 282]
+	  Position		  [-115, 268, -50, 292]
 	  ZOrder		  248
 	  VariableName		  "V4"
 	  SampleTime		  "0"
@@ -7578,7 +7578,7 @@ Model {
 	  ZOrder		  138
 	  SrcBlock		  "From\nWorkspace1"
 	  SrcPort		  1
-	  Points		  [22, 0; 0, -100]
+	  Points		  [22, 0; 0, -80]
 	  DstBlock		  "Motor dynamics"
 	  DstPort		  1
 	}
@@ -7586,7 +7586,7 @@ Model {
 	  ZOrder		  139
 	  SrcBlock		  "From\nWorkspace2"
 	  SrcPort		  1
-	  Points		  [8, 0; 0, -35]
+	  Points		  [8, 0; 0, -25]
 	  DstBlock		  "Motor dynamics"
 	  DstPort		  2
 	}
@@ -7602,7 +7602,7 @@ Model {
 	  ZOrder		  141
 	  SrcBlock		  "From\nWorkspace4"
 	  SrcPort		  1
-	  Points		  [8, 0; 0, 95]
+	  Points		  [8, 0; 0, 85]
 	  DstBlock		  "Motor dynamics"
 	  DstPort		  4
 	}

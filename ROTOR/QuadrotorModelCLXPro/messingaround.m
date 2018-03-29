@@ -10,18 +10,18 @@ U4 = d*(-o1^2 + o2^2 - o3^3 + o4^2);
 O = -o1 + o2 - o3 + o4;
 
 
-x1d = x2
-x2d = (cos(x7)*sin(x9)*cos(x11) + sin(x7)*sin(x11))*(U1/m)
-x3d = x4
-x4d = (cos(x7)*sin(x9)*sin(x11) - sin(x7)*cos(x11))*(U1/m)
-x5d = x6
-x6d = -g + (cos(x7)*cos(x9))*(U1/m)
-x7d = x8
-x8d = ((iyy - izz)/ixx)*x10*x12 - (Jr/ixx)*x10*O + (L/ixx)*U2
-x9d = x10
-x10d = ((izz - ixx)/iyy)*x8*x12 + (Jr/ixx)*x8*O + (L/ixx)*U3
-x11d = x12
-x12d = U4/izz
+x1d = x2;
+x2d = (cos(x7)*sin(x9)*cos(x11) + sin(x7)*sin(x11))*(U1/m);
+x3d = x4;
+x4d = (cos(x7)*sin(x9)*sin(x11) - sin(x7)*cos(x11))*(U1/m);
+x5d = x6;
+x6d = -g + (cos(x7)*cos(x9))*(U1/m);
+x7d = x8;
+x8d = ((iyy - izz)/ixx)*x10*x12 - (Jr/ixx)*x10*O + (L/ixx)*U2;
+x9d = x10;
+x10d = ((izz - ixx)/iyy)*x8*x12 + (Jr/ixx)*x8*O + (L/ixx)*U3;
+x11d = x12;
+x12d = U4/izz;
 
 
 
@@ -36,7 +36,7 @@ A = [0 1 0 0 0 0 0 0 0 0 0 0;
 0 0 0 0 0 0 0 0 0 1 0 0;
 0 0 0 0 0 0 0 0 0 0 0 0;
 0 0 0 0 0 0 0 0 0 0 0 1;
-0 0 0 0 0 0 0 0 0 0 0 0]
+0 0 0 0 0 0 0 0 0 0 0 0];
 
 
 B =[0 0 0 0;
@@ -50,7 +50,7 @@ B =[0 0 0 0;
 0 0 0 0;
 -0.008234 0 0.008234 0;
 0 0 0 0;
--0.005615 0.005615 -0.005615 0.005615]
+-0.005615 0.005615 -0.005615 0.005615];
 
 C = eye(12);
 [K,S,e] = lqr(A,B,200*eye(12),0.1*eye(4))
