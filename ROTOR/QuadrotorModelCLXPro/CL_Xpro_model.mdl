@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.78"
+    ComputedModelVersion    "1.80"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -16,13 +16,7 @@ Model {
     HasTerminateEvent	    0
     IsExportFunctionModel   0
     NumParameterArguments   0
-    NumExternalFileReferences 1
-    ExternalFileReference {
-      Reference		      "dspsrcs4/Random\nSource"
-      Path		      "CL_Xpro_model/CL X-Pro/Gaussian Source"
-      SID		      "648"
-      Type		      "LIBRARY_BLOCK"
-    }
+    NumExternalFileReferences 0
     OrderedModelArguments   1
   }
   LogicAnalyzerGraphicalSettings ""
@@ -51,7 +45,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-8.0, -8.0, 1936.0, 1056.0]
+      Location		      [-8.0, -8.0, 1384.0, 888.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -76,7 +70,7 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "612"
-	  Extents		  [1920.0, 1080.0]
+	  Extents		  [1368.0, 912.0]
 	  ZoomFactor		  [1.75]
 	  Offset		  [0.0, 0.0]
 	}
@@ -85,27 +79,27 @@ Model {
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "130"
-	  Extents		  [1882.0, 872.0]
+	  Extents		  [1330.0, 704.0]
 	  ZoomFactor		  [1.25]
-	  Offset		  [-362.40823776445797, -11.999999999999943]
+	  Offset		  [-370.40823776445689, 41.500000000000739]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "640"
-	  Extents		  [1882.0, 872.0]
-	  ZoomFactor		  [2.0]
-	  Offset		  [0.0, 0.0]
+	  LoadSaveID		  "499"
+	  Extents		  [1330.0, 704.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-263.99999999999983, -134.14285714285711]
 	}
 	Object {
 	  $ObjectID		  8
 	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "1"
-	  Extents		  [1882.0, 872.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [-653.12358827064236, -11.515790050527581]
+	  Extents		  [1330.0, 704.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [-736.58973411445527, -92.238155295774561]
 	}
 	PropName		"EditorsInfo"
       }
@@ -127,7 +121,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAeAAAADpAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAVYAAAC/AAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAL9/////wAAAAAAAAAA/"
@@ -141,9 +135,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Padraig Lysandrou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Mar 17 13:33:01 2018"
-  RTWModifiedTimeStamp	  443136506
-  ModelVersionFormat	  "1.%<AutoIncrement:78>"
+  LastModifiedDate	  "Mon Apr 09 20:11:57 2018"
+  RTWModifiedTimeStamp	  445205056
+  ModelVersionFormat	  "1.%<AutoIncrement:80>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1261,7 +1255,7 @@ Model {
       Variant		      off
       System {
 	Name			"CL X-Pro"
-	Location		[-8, -8, 1928, 1048]
+	Location		[-8, -8, 1376, 880]
 	Open			on
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
@@ -1274,7 +1268,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"150"
+	ZoomFactor		"100"
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Angular Rate to Voltage Level"
@@ -1286,8 +1280,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Angular Rate to Voltage Level"
-	    Location		    [-8, -8, 1928, 1048]
-	    Open		    on
+	    Location		    [-8, -8, 1376, 880]
+	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -1347,8 +1341,8 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"reverseR1"
-		Location		[-8, -8, 1928, 1048]
-		Open			off
+		Location		[-8, -8, 1376, 880]
+		Open			on
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
@@ -1360,7 +1354,7 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"175"
+		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Omega"
@@ -2085,7 +2079,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"reverseR4"
-		Location		[-8, -8, 1928, 1048]
+		Location		[8, 8, 1944, 1064]
 		Open			on
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
@@ -2423,7 +2417,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Body dynamics"
-	    Location		    [-8, -8, 1928, 1048]
+	    Location		    [8, 8, 1396, 940]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
@@ -5033,7 +5027,7 @@ Model {
 	  BlockType		  FromWorkspace
 	  Name			  "From\nWorkspace1"
 	  SID			  "667"
-	  Position		  [-115, 148, -50, 172]
+	  Position		  [340, 133, 405, 157]
 	  ZOrder		  245
 	  VariableName		  "V1"
 	  SampleTime		  "0"
@@ -5043,7 +5037,7 @@ Model {
 	  BlockType		  FromWorkspace
 	  Name			  "From\nWorkspace2"
 	  SID			  "668"
-	  Position		  [-115, 188, -50, 212]
+	  Position		  [340, 173, 405, 197]
 	  ZOrder		  246
 	  VariableName		  "V2"
 	  SampleTime		  "0"
@@ -5053,7 +5047,7 @@ Model {
 	  BlockType		  FromWorkspace
 	  Name			  "From\nWorkspace3"
 	  SID			  "669"
-	  Position		  [-115, 228, -50, 252]
+	  Position		  [340, 213, 405, 237]
 	  ZOrder		  247
 	  VariableName		  "V3"
 	  SampleTime		  "0"
@@ -5063,7 +5057,7 @@ Model {
 	  BlockType		  FromWorkspace
 	  Name			  "From\nWorkspace4"
 	  SID			  "670"
-	  Position		  [-115, 268, -50, 292]
+	  Position		  [340, 253, 405, 277]
 	  ZOrder		  248
 	  VariableName		  "V4"
 	  SampleTime		  "0"
@@ -5082,37 +5076,6 @@ Model {
 	  SaturateOnIntegerOverflow off
 	}
 	Block {
-	  BlockType		  Reference
-	  Name			  "Gaussian Source"
-	  SID			  "648"
-	  Ports			  [0, 1]
-	  Position		  [760, 396, 795, 434]
-	  ZOrder		  31
-	  LibraryVersion	  "1.795"
-	  UserDataPersistent	  on
-	  UserData		  "DataTag0"
-	  SourceBlock		  "dspsrcs4/Random\nSource"
-	  SourceType		  "Random Source"
-	  SourceProductName	  "DSP System Toolbox"
-	  SourceProductBaseCode	  "DS"
-	  SrcType		  "Uniform"
-	  NormMethod		  "Ziggurat"
-	  CltLength		  "12"
-	  MinVal		  "0.97"
-	  MaxVal		  "1.03"
-	  MeanVal		  "0"
-	  VarVal		  "1"
-	  RepMode		  "Not repeatable"
-	  rawSeed		  "1"
-	  IsInherit		  off
-	  SampMode		  "Discrete"
-	  SampTime		  "1"
-	  SampFrame		  "1"
-	  DataType		  "Double"
-	  OutComplex		  "Real"
-	  OutputFrames		  off
-	}
-	Block {
 	  BlockType		  SubSystem
 	  Name			  "Motor dynamics"
 	  SID			  "130"
@@ -5123,7 +5086,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Motor dynamics"
-	    Location		    [-8, -8, 1928, 1048]
+	    Location		    [-8, -8, 1376, 880]
 	    Open		    on
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
@@ -7106,22 +7069,6 @@ Model {
 	}
 	Block {
 	  BlockType		  Sum
-	  Name			  "Sum"
-	  SID			  "652"
-	  Ports			  [2, 1]
-	  Position		  [770, 355, 790, 375]
-	  ZOrder		  232
-	  BlockMirror		  on
-	  NamePlacement		  "alternate"
-	  ShowName		  off
-	  IconShape		  "round"
-	  Inputs		  "|++"
-	  InputSameDT		  off
-	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
-	  SaturateOnIntegerOverflow off
-	}
-	Block {
-	  BlockType		  Sum
 	  Name			  "Sum1"
 	  SID			  "654"
 	  Ports			  [2, 1]
@@ -7575,47 +7522,32 @@ Model {
 	  DstPort		  4
 	}
 	Line {
-	  ZOrder		  138
-	  SrcBlock		  "From\nWorkspace1"
+	  ZOrder		  142
+	  SrcBlock		  "Angular Rate to Voltage Level"
 	  SrcPort		  1
-	  Points		  [22, 0; 0, -80]
 	  DstBlock		  "Motor dynamics"
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  139
-	  SrcBlock		  "From\nWorkspace2"
-	  SrcPort		  1
-	  Points		  [8, 0; 0, -25]
+	  ZOrder		  143
+	  SrcBlock		  "Angular Rate to Voltage Level"
+	  SrcPort		  2
 	  DstBlock		  "Motor dynamics"
 	  DstPort		  2
 	}
 	Line {
-	  ZOrder		  140
-	  SrcBlock		  "From\nWorkspace3"
-	  SrcPort		  1
-	  Points		  [22, 0; 0, 30]
+	  ZOrder		  144
+	  SrcBlock		  "Angular Rate to Voltage Level"
+	  SrcPort		  3
 	  DstBlock		  "Motor dynamics"
 	  DstPort		  3
 	}
 	Line {
-	  ZOrder		  141
-	  SrcBlock		  "From\nWorkspace4"
-	  SrcPort		  1
-	  Points		  [8, 0; 0, 85]
+	  ZOrder		  145
+	  SrcBlock		  "Angular Rate to Voltage Level"
+	  SrcPort		  4
 	  DstBlock		  "Motor dynamics"
 	  DstPort		  4
-	}
-	Annotation {
-	  SID			  "651"
-	  Name			  "adding gaussian noise!"
-	  Position		  [722, 313, 796, 347]
-	  InternalMargins	  [0, 0, 0, 0]
-	  FixedHeight		  on
-	  FixedWidth		  on
-	  HorizontalAlignment	  "left"
-	  VerticalAlignment	  "top"
-	  ZOrder		  -1
 	}
       }
     }
@@ -7747,15 +7679,6 @@ Model {
       DstBlock		      "Mux"
       DstPort		      12
     }
-  }
-}
-MatData {
-  NumRecords		  1
-  DataRecord {
-    Tag			    DataTag0
-    Data		    "  %)30     .    V     8    (     @         %    \"     $    !     0         %  0 \"0    $    2    4V5E9"
-    "       4V5E9$9L86<         #@   #@    &    \"     0         !0    @    !    !0    $         $     4    R,S$Q,P    "
-    "X   !     !@    @    $          4    (     0    T    !         !     -    1&].;W13879E4V5E9     "
   }
 }
 #Finite State Machines
