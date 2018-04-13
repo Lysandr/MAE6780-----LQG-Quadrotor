@@ -9,6 +9,7 @@ V1_WP=9.1275;               % WP - hovering
 V2_WP=8.955;
 V3_WP=8.61;
 V4_WP=8.543;
+hover = [V1_WP;V2_WP;V3_WP;V4_WP];
 
 d_omega_R10=9.1275;          % motor 1. rotor
 d_omega_R20=8.955;           % motor 2. rotor
