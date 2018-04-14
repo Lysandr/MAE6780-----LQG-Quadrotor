@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.32"
+    ComputedModelVersion    "1.55"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -45,7 +45,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-6.0, -6.0, 1577.0, 1016.0]
+      Location		      [775.0, 0.0, 794.0, 1009.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -69,9 +69,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[3057.0, 1713.0]
-	ZoomFactor		[1.7462881974226683]
-	Offset			[-177.52759960336607, 78.456031768949686]
+	Extents			[1303.0, 1480.0]
+	ZoomFactor		[0.79999999999999993]
+	Offset			[-43.813567174633079, -183.3149942336845]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -84,18 +84,18 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[320]
-	Height			[240]
+	Width			[365]
+	Height			[274]
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAC+AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAACnAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAATwD///8AAAw3AAAHFAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAARwD///8AAAVWAAAGIwAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAADb/////wAAAAAAAAAA/////wEAAAGG/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAJh/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAVt/////wAAAAAAAAAA/"
-      "////wEAAAXC/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAADB/////wAAAAAAAAAA/////wEAAAFY/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAIZ/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAATC/////wAAAAAAAAAA/"
+      "////wEAAAUM/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   HideAutomaticNames	  on
@@ -105,9 +105,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Padraig Lysandrou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Apr 13 12:42:40 2018"
-  RTWModifiedTimeStamp	  445524147
-  ModelVersionFormat	  "1.%<AutoIncrement:32>"
+  LastModifiedDate	  "Sat Apr 14 17:04:05 2018"
+  RTWModifiedTimeStamp	  445624677
+  ModelVersionFormat	  "1.%<AutoIncrement:55>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -214,9 +214,9 @@ Model {
 	  DisabledProps		  []
 	  Description		  ""
 	  StartTime		  "0.0"
-	  StopTime		  "100"
+	  StopTime		  "1000"
 	  AbsTol		  "auto"
-	  FixedStep		  "auto"
+	  FixedStep		  "0.01"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
@@ -230,14 +230,14 @@ Model {
 	  RelTol		  "1e-3"
 	  EnableMultiTasking	  on
 	  ConcurrentTasks	  off
-	  Solver		  "ode45"
-	  SolverName		  "ode45"
+	  Solver		  "VariableStepAuto"
+	  SolverName		  "VariableStepAuto"
 	  SolverJacobianMethodControl "auto"
 	  ShapePreserveControl	  "DisableAll"
 	  ZeroCrossControl	  "UseLocalSettings"
 	  ZeroCrossAlgorithm	  "Nonadaptive"
 	  AlgebraicLoopSolver	  "TrustRegion"
-	  SolverInfoToggleStatus  off
+	  SolverInfoToggleStatus  on
 	  IsAutoAppliedInSIP	  off
 	  SolverResetMethod	  "Fast"
 	  PositivePriorityOrder	  off
@@ -875,7 +875,7 @@ Model {
       Name		      "Configuration"
       ExtraOptions	      ""
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 820, 400, 1740, 1040 ]
+      ConfigPrmDlgPosition    [ 569, 217, 1489, 857 ]
     }
     PropName		    "ConfigurationSets"
   }
@@ -1182,7 +1182,7 @@ Model {
   }
   System {
     Name		    "quadcopter_model_test"
-    Location		    [-6, -6, 1571, 1010]
+    Location		    [775, 0, 1569, 1009]
     Open		    on
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
@@ -1195,31 +1195,24 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "175"
+    ZoomFactor		    "80"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "493"
+    SIDHighWatermark	    "503"
     Block {
       BlockType		      Constant
       Name		      "Constant"
-      SID		      "491"
-      Position		      [-150, 242, -85, 268]
-      ZOrder		      26
+      SID		      "502"
+      Position		      [0, 242, 55, 268]
+      ZOrder		      37
       Value		      "stateref"
-    }
-    Block {
-      BlockType		      Constant
-      Name		      "Constant1"
-      SID		      "493"
-      Position		      [65, 320, 95, 350]
-      ZOrder		      28
-      Value		      "hover"
+      VectorParams1D	      off
     }
     Block {
       BlockType		      Demux
       Name		      "Demux"
       SID		      "267"
       Ports		      [1, 4]
-      Position		      [220, 52, 230, 458]
+      Position		      [315, 52, 325, 458]
       ZOrder		      21
       ShowName		      off
       DisplayOption	      "bar"
@@ -1228,49 +1221,61 @@ Model {
       BlockType		      Gain
       Name		      "Gain"
       SID		      "490"
-      Position		      [20, 232, 90, 278]
+      Position		      [165, 232, 235, 278]
       ZOrder		      25
       Gain		      "K"
       Multiplication	      "Matrix(K*u) (u vector)"
       ParamDataTypeStr	      "Inherit: Inherit via internal rule"
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
+      Port {
+	PortNumber		1
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	    Type		    "in"
+	    OpenLoop		    "off"
+	    BusElementName	    ""
+	  }
+	  PropName		  "LinearAnalysisIO"
+	}
+      }
     }
     Block {
       BlockType		      Mux
       Name		      "Mux"
       SID		      "260"
       Ports		      [16, 1]
-      Position		      [545, 54, 555, 451]
+      Position		      [500, 54, 510, 451]
       ZOrder		      14
       ShowName		      off
       Inputs		      "16"
       DisplayOption	      "bar"
+      Port {
+	PortNumber		1
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	    Type		    "out"
+	    OpenLoop		    "on"
+	    BusElementName	    ""
+	  }
+	  PropName		  "LinearAnalysisIO"
+	}
+      }
     }
     Block {
       BlockType		      Sum
       Name		      "Sum"
       SID		      "488"
       Ports		      [2, 1]
-      Position		      [-40, 245, -20, 265]
+      Position		      [105, 245, 125, 265]
       ZOrder		      24
       ShowName		      off
       IconShape		      "round"
       Inputs		      "|+-"
-      InputSameDT	      off
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-    }
-    Block {
-      BlockType		      Sum
-      Name		      "Sum1"
-      SID		      "492"
-      Ports		      [2, 1]
-      Position		      [140, 245, 160, 265]
-      ZOrder		      27
-      ShowName		      off
-      IconShape		      "round"
-      Inputs		      "|++"
       InputSameDT	      off
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
@@ -1300,7 +1305,7 @@ Model {
       Variant		      off
       System {
 	Name			"quadmdl"
-	Location		[776, 0, 1570, 1008]
+	Location		[775, 0, 1569, 1009]
 	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
@@ -1360,7 +1365,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Body dynamics"
-	    Location		    [776, 0, 1570, 1008]
+	    Location		    [775, 0, 1569, 1009]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
@@ -2382,7 +2387,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"gibanje u prostoru"
-		Location		[-6, -6, 1571, 1010]
+		Location		[-7, -7, 1570, 1009]
 		Open			off
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
@@ -3564,7 +3569,7 @@ Model {
 	      BlockType		      Outport
 	      Name		      "Phi"
 	      SID		      "122"
-	      Position		      [480, 378, 510, 392]
+	      Position		      [490, 393, 520, 407]
 	      ZOrder		      -18
 	      Port		      "7"
 	      IconDisplay	      "Port number"
@@ -3573,7 +3578,7 @@ Model {
 	      BlockType		      Outport
 	      Name		      "phidot"
 	      SID		      "238"
-	      Position		      [485, 413, 515, 427]
+	      Position		      [530, 418, 560, 432]
 	      ZOrder		      4
 	      Port		      "8"
 	      IconDisplay	      "Port number"
@@ -3589,11 +3594,10 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Outport
-	      Name		      "Phi2"
+	      Name		      "thetadot"
 	      SID		      "239"
-	      Position		      [485, 483, 515, 497]
+	      Position		      [525, 483, 555, 497]
 	      ZOrder		      5
-	      NamePlacement	      "alternate"
 	      Port		      "10"
 	      IconDisplay	      "Port number"
 	    }
@@ -3608,9 +3612,9 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Outport
-	      Name		      "Phi3"
+	      Name		      "psidot"
 	      SID		      "240"
-	      Position		      [485, 543, 515, 557]
+	      Position		      [525, 528, 555, 542]
 	      ZOrder		      6
 	      Port		      "12"
 	      IconDisplay	      "Port number"
@@ -3742,7 +3746,7 @@ Model {
 		Points			[0, 106]
 		Branch {
 		  ZOrder		  47
-		  Points		  [50, 0; 0, 19]
+		  Points		  [50, 0; 0, 24]
 		  DstBlock		  "phidot"
 		  DstPort		  1
 		}
@@ -3762,7 +3766,7 @@ Model {
 	      Branch {
 		ZOrder			49
 		Points			[0, 60]
-		DstBlock		"Phi2"
+		DstBlock		"thetadot"
 		DstPort			1
 	      }
 	      Branch {
@@ -3786,16 +3790,16 @@ Model {
 	      ZOrder		      27
 	      SrcBlock		      "Yaw Stability"
 	      SrcPort		      2
-	      Points		      [10, 0; 0, 29]
+	      Points		      [10, 0; 0, 30]
 	      Branch {
 		ZOrder			51
-		Points			[161, 0; 0, 51]
-		DstBlock		"Phi3"
+		Points			[0, 5; 148, 0; 0, 48; 75, 0; 0, -18]
+		DstBlock		"psidot"
 		DstPort			1
 	      }
 	      Branch {
 		ZOrder			50
-		Points			[0, 1; -140, 0; 0, -130]
+		Points			[-140, 0; 0, -130]
 		Branch {
 		  ZOrder		  28
 		  Points		  [0, -125]
@@ -3821,7 +3825,7 @@ Model {
 	      }
 	      Branch {
 		ZOrder			32
-		Points			[0, 190]
+		Points			[0, 205]
 		DstBlock		"Phi"
 		DstPort			1
 	      }
@@ -3946,7 +3950,7 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "Motor dynamics"
-	    Location		    [-6, -6, 1571, 1010]
+	    Location		    [775, 0, 1569, 1009]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
@@ -3959,7 +3963,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "121"
+	    ZoomFactor		    "112"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "V1"
@@ -4850,7 +4854,7 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"Motor/Rotor4"
-		Location		[-6, -6, 1571, 1010]
+		Location		[-7, -7, 1570, 1009]
 		Open			off
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	off
@@ -6267,10 +6271,10 @@ Model {
       ZOrder		      15
       SrcBlock		      "Mux"
       SrcPort		      1
-      Points		      [47, 0]
+      Points		      [92, 0]
       Branch {
 	ZOrder			37
-	Points			[0, 229; -637, 0]
+	Points			[0, 251; -492, 0]
 	DstBlock		"Sum"
 	DstPort			2
       }
@@ -6344,33 +6348,18 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      39
+      ZOrder		      77
       SrcBlock		      "Constant"
       SrcPort		      1
       DstBlock		      "Sum"
       DstPort		      1
     }
     Line {
-      ZOrder		      40
+      ZOrder		      67
       SrcBlock		      "Gain"
-      SrcPort		      1
-      DstBlock		      "Sum1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      41
-      SrcBlock		      "Sum1"
       SrcPort		      1
       DstBlock		      "Demux"
       DstPort		      1
-    }
-    Line {
-      ZOrder		      43
-      SrcBlock		      "Constant1"
-      SrcPort		      1
-      Points		      [50, 0]
-      DstBlock		      "Sum1"
-      DstPort		      2
     }
   }
 }
