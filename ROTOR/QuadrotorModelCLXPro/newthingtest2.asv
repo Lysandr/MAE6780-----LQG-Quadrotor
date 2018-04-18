@@ -10,27 +10,30 @@ B = LinearAnalysisToolProject.LocalVariables(2).Value.B;
 C = LinearAnalysisToolProject.LocalVariables(2).Value.C;
 D = LinearAnalysisToolProject.LocalVariables(2).Value.D;
 
-Q = 20000*(C')*C;
-Q(2,2) = 100;
-Q(4,4) = 100;
-Q(5,5) = 35000;
-Q(6,6)= 100;
+%% GENERATE THE FEEDBACK GAIN MATRIX
+Q = 100*eye(16,16); Q(1,1)=3000; Q(3,3)=3000; Q(5,5) = 9000; Q(11,11)=9000;
+R = 0.1*eye(4);
+P = 10000*eye(16,16);
+dt = 0.0001;
+tT = 35;
+tspan = tT:-dt:0;
+finalS = reshape(P,[16^2,1]);
+[t,S] = ode45(@(t,S) rhs(t,S,A,B,R,Q), tspan, finalS);
+C = zeros(length(tspan)*4,16);
+Si = zeros(length(tspan)*16,16);
+igain = zeros(length(tspan),4*16);
+for i = 1:length(tspan)
+	Sii = reshape(S(i,:),16,16);
+	Si(16*(i-1)+1 : 16*i,:) = Sii;
+    j = length(tspan)-i+1;
+	C((j*4)-3:j*4,:) = R\(B'*Sii);
+    igain(j,:) = reshape(R\(B'*Sii),[1,4*16]);
+end
 
-R = 0.008*eye(4);
-[K,S,E] = lqr(A,B,Q,R);
+fb_gain = [flipud(tspan') igain];
 
 %% GENERATE THE TRAJECTORY TO FOLLOW 
-numbl = 1001;
-T = linspace(0,100,numbl)';
-amp = 50;
-zvt = zeros(numbl,1);
-xvect = amp*cos(T);
-yvect = amp*sin(T);
-zvect = 30 + T./10;
-% stateref = [T xvect zvt yvect zvt zvect zvt zvt zvt zvt zvt zvt zvt zvt zvt zvt zvt];
-stateref = [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0]';
-
-
+stateref = [10 0 10 0 50 0 0 0 0 0 0 0 0 0 0 0]';
 
 
 %% DO THE SIMULATION!
@@ -39,10 +42,24 @@ sim('newthing');
 toc
 
 
-
-
-
 %% plotski
+figure;
+curve = animatedline('LineWidth',1);
+set(gca,'XLim',[0 50], 'YLim',[0 50],'Zlim',[0 50]);
+view(285,25);
+tint = 400;
+hold on;
+grid on
+for i=1:length(state.Data(:,1))/tint
+	addpoints(curve, state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5));
+	head = scatter3(state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5), 'filled','MarkerFaceColor','b','MarkerEdgeColor','b');
+	drawnow; hold on;
+	delete(head);
+end
+hold off;
+
+
+
 % plot the trajectory
 figure; hold on;
 grid on;
@@ -76,5 +93,8 @@ plot(state.Time, state.Data(:,11)); title('Psi vs time')
 finalstate = [state.Data(end,1) state.Data(end,3) state.Data(end,5)]
 totalerror = [(finalstate(1)-stateref(1))/stateref(1) (finalstate(2)-stateref(3))/stateref(3) ...
     (finalstate(3)-stateref(5))/stateref(5) ]
+
+
+
 
 

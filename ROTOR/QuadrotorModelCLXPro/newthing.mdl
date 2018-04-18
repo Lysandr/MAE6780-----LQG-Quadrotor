@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.37"
+    ComputedModelVersion    "1.41"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -70,8 +70,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[2673.0, 1493.0]
-	ZoomFactor		[1.5]
-	Offset			[75.152731526825278, 104.01193367797356]
+	ZoomFactor		[2.0670413581206142]
+	Offset			[67.828596905964218, 190.13188506335749]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -105,9 +105,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Padraig Lysandrou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Apr 14 19:05:58 2018"
-  RTWModifiedTimeStamp	  445633553
-  ModelVersionFormat	  "1.%<AutoIncrement:37>"
+  LastModifiedDate	  "Tue Apr 17 16:25:43 2018"
+  RTWModifiedTimeStamp	  445883142
+  ModelVersionFormat	  "1.%<AutoIncrement:41>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -984,6 +984,15 @@ Model {
       SampleTime	      "-1"
     }
     Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      OutDataTypeStr	      "Inherit: auto"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
       BlockType		      Gain
       Gain		      "1"
       Multiplication	      "Element-wise(K.*u)"
@@ -1080,6 +1089,11 @@ Model {
       RndMeth		      "Zero"
       SaturateOnIntegerOverflow	on
       SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Reshape
+      OutputDimensionality    "1-D array"
+      OutputDimensions	      "[1,1]"
     }
     Block {
       BlockType		      Saturate
@@ -1186,15 +1200,15 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "207"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "271"
+    SIDHighWatermark	    "280"
     Block {
       BlockType		      Constant
       Name		      "Constant"
-      SID		      "257"
-      Position		      [230, 345, 260, 375]
-      ZOrder		      6
+      SID		      "273"
+      Position		      [175, 345, 230, 375]
+      ZOrder		      10
       Value		      "stateref"
     }
     Block {
@@ -1216,29 +1230,28 @@ Model {
       DisplayOption	      "bar"
     }
     Block {
-      BlockType		      Gain
-      Name		      "Gain"
-      SID		      "254"
-      Position		      [310, 337, 380, 383]
-      ZOrder		      3
-      Gain		      "K"
-      Multiplication	      "Matrix(K*u) (u vector)"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
+      BlockType		      FromWorkspace
+      Name		      "From\nWorkspace"
+      SID		      "275"
+      Position		      [135, 303, 200, 327]
+      ZOrder		      12
+      VariableName	      "fb_gain"
+      SampleTime	      "0"
+      ZeroCross		      on
+    }
+    Block {
+      BlockType		      Product
+      Name		      "Matrix Multiply"
+      SID		      "280"
+      Ports		      [2, 1]
+      Position		      [310, 339, 365, 381]
+      ZOrder		      17
+      NamePlacement	      "alternate"
+      Multiplication	      "Matrix(*)"
+      InputSameDT	      off
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      RndMeth		      "Floor"
       SaturateOnIntegerOverflow	off
-      Port {
-	PortNumber		1
-	Array {
-	  Type			  "Struct"
-	  Dimension		  1
-	  MATStruct {
-	    Type		    "in"
-	    OpenLoop		    "off"
-	    BusElementName	    ""
-	  }
-	  PropName		  "LinearAnalysisIO"
-	}
-      }
     }
     Block {
       BlockType		      Mux
@@ -1265,11 +1278,21 @@ Model {
       }
     }
     Block {
+      BlockType		      Reshape
+      Name		      "Reshape"
+      SID		      "274"
+      Ports		      [1, 1]
+      Position		      [225, 300, 255, 330]
+      ZOrder		      11
+      OutputDimensionality    "Customize"
+      OutputDimensions	      "[4,16]"
+    }
+    Block {
       BlockType		      Sum
       Name		      "Sum"
       SID		      "256"
       Ports		      [2, 1]
-      Position		      [280, 350, 300, 370]
+      Position		      [260, 350, 280, 370]
       ZOrder		      5
       ShowName		      off
       IconShape		      "round"
@@ -1330,7 +1353,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"117"
 	Block {
 	  BlockType		  Inport
 	  Name			  "V1"
@@ -6190,7 +6213,7 @@ Model {
       Points		      [61, 0]
       Branch {
 	ZOrder			22
-	Points			[0, 196; -421, 0]
+	Points			[0, 196; -441, 0]
 	DstBlock		"Sum"
 	DstPort			2
       }
@@ -6201,14 +6224,7 @@ Model {
       }
     }
     Line {
-      ZOrder		      23
-      SrcBlock		      "Sum"
-      SrcPort		      1
-      DstBlock		      "Gain"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      24
+      ZOrder		      35
       SrcBlock		      "Constant"
       SrcPort		      1
       DstBlock		      "Sum"
@@ -6243,13 +6259,6 @@ Model {
       DstPort		      16
     }
     Line {
-      ZOrder		      29
-      SrcBlock		      "Gain"
-      SrcPort		      1
-      DstBlock		      "Sum1"
-      DstPort		      1
-    }
-    Line {
       ZOrder		      30
       SrcBlock		      "Sum1"
       SrcPort		      1
@@ -6263,6 +6272,36 @@ Model {
       Points		      [10, 0]
       DstBlock		      "Sum1"
       DstPort		      2
+    }
+    Line {
+      ZOrder		      43
+      SrcBlock		      "From\nWorkspace"
+      SrcPort		      1
+      DstBlock		      "Reshape"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      49
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [9, 0; 0, 10]
+      DstBlock		      "Matrix Multiply"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      53
+      SrcBlock		      "Matrix Multiply"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      54
+      SrcBlock		      "Reshape"
+      SrcPort		      1
+      Points		      [34, 0; 0, 35]
+      DstBlock		      "Matrix Multiply"
+      DstPort		      1
     }
   }
 }

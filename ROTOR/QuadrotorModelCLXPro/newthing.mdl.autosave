@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.33"
+    ComputedModelVersion    "1.40"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -16,7 +16,13 @@ Model {
     HasTerminateEvent	    0
     IsExportFunctionModel   0
     NumParameterArguments   0
-    NumExternalFileReferences 0
+    NumExternalFileReferences 1
+    ExternalFileReference {
+      Reference		      "dspmtrx3/Array-Vector\nMultiply"
+      Path		      "newthing/Array-Vector Multiply"
+      SID		      "279"
+      Type		      "LIBRARY_BLOCK"
+    }
     OrderedModelArguments   1
   }
   LogicAnalyzerGraphicalSettings ""
@@ -70,8 +76,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[2673.0, 1493.0]
-	ZoomFactor		[1.5]
-	Offset			[21.456070178602463, 104.01193367797356]
+	ZoomFactor		[2.0670413581206142]
+	Offset			[67.828596905964218, 190.13188506335749]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -105,9 +111,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Padraig Lysandrou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sat Apr 14 18:47:10 2018"
-  RTWModifiedTimeStamp	  445632760
-  ModelVersionFormat	  "1.%<AutoIncrement:33>"
+  LastModifiedDate	  "Tue Apr 17 16:14:25 2018"
+  RTWModifiedTimeStamp	  445882841
+  ModelVersionFormat	  "1.%<AutoIncrement:40>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -214,7 +220,7 @@ Model {
 	  DisabledProps		  []
 	  Description		  ""
 	  StartTime		  "0.0"
-	  StopTime		  "100"
+	  StopTime		  "400"
 	  AbsTol		  "auto"
 	  FixedStep		  "auto"
 	  InitialStep		  "auto"
@@ -891,7 +897,7 @@ Model {
 	  DisabledProps		  []
 	  Description		  ""
 	  StartTime		  "0.0"
-	  StopTime		  "100"
+	  StopTime		  "400"
 	  AbsTol		  "auto"
 	  FixedStep		  "auto"
 	  InitialStep		  "auto"
@@ -1661,6 +1667,15 @@ Model {
       SampleTime	      "-1"
     }
     Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      OutDataTypeStr	      "Inherit: auto"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
       BlockType		      Gain
       Gain		      "1"
       Multiplication	      "Element-wise(K.*u)"
@@ -1759,6 +1774,11 @@ Model {
       SampleTime	      "-1"
     }
     Block {
+      BlockType		      Reshape
+      OutputDimensionality    "1-D array"
+      OutputDimensions	      "[1,1]"
+    }
+    Block {
       BlockType		      Saturate
       UpperLimitSource	      "Dialog"
       UpperLimit	      "0.5"
@@ -1777,15 +1797,6 @@ Model {
       BlockType		      Scope
       DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
       Floating		      off
-    }
-    Block {
-      BlockType		      Step
-      Time		      "1"
-      Before		      "0"
-      After		      "1"
-      SampleTime	      "-1"
-      VectorParams1D	      on
-      ZeroCross		      on
     }
     Block {
       BlockType		      SubSystem
@@ -1872,15 +1883,66 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "207"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "271"
+    SIDHighWatermark	    "279"
+    Block {
+      BlockType		      Reference
+      Name		      "Array-Vector\nMultiply"
+      SID		      "279"
+      Ports		      [2, 1]
+      Position		      [310, 331, 390, 384]
+      ZOrder		      16
+      LibraryVersion	      "1.913"
+      SourceBlock	      "dspmtrx3/Array-Vector\nMultiply"
+      SourceType	      "Array-Vector Multiply"
+      SourceProductName	      "DSP System Toolbox"
+      SourceProductBaseCode   "DS"
+      mode		      "Mute"
+      saveAsFlag	      "0"
+      Dimension		      "2"
+      V_Source		      "Input port"
+      V_VectFromMask	      "[0.5 0.25]"
+      additionalParams	      off
+      allowOverrides	      on
+      firstCoeffMode	      "Same word length as input"
+      firstCoeffSignedness    "Auto"
+      firstCoeffWordLength    "16"
+      firstCoeffFracLength    "15"
+      firstCoeffDataTypeStr   "Inherit: Same word length as input"
+      firstCoeffLastDataTypeStr	"Inherit: Same word length as input"
+      firstCoeffMin	      "[]"
+      firstCoeffMax	      "[]"
+      outputMode	      "Same as product output"
+      outputSignedness	      "Auto"
+      outputWordLength	      "16"
+      outputFracLength	      "15"
+      outputDataTypeStr	      "Inherit: Same as product output"
+      outputLastDataTypeStr   "Inherit: Same as product output"
+      outputMin		      "[]"
+      outputMax		      "[]"
+      accumMode		      "Inherit via internal rule"
+      accumSignedness	      "Auto"
+      accumWordLength	      "32"
+      accumFracLength	      "30"
+      accumDataTypeStr	      "Inherit: Inherit via internal rule"
+      accumLastDataTypeStr    "Inherit: Inherit via internal rule"
+      prodOutputMode	      "Inherit via internal rule"
+      prodOutputSignedness    "Auto"
+      prodOutputWordLength    "32"
+      prodOutputFracLength    "30"
+      prodOutputDataTypeStr   "Inherit: Inherit via internal rule"
+      prodOutputLastDataTypeStr	"Inherit: Inherit via internal rule"
+      roundingMode	      "Floor"
+      overflowMode	      off
+      LockScale		      off
+    }
     Block {
       BlockType		      Constant
       Name		      "Constant"
-      SID		      "257"
-      Position		      [230, 345, 260, 375]
-      ZOrder		      6
+      SID		      "273"
+      Position		      [175, 345, 230, 375]
+      ZOrder		      10
       Value		      "stateref"
     }
     Block {
@@ -1902,29 +1964,14 @@ Model {
       DisplayOption	      "bar"
     }
     Block {
-      BlockType		      Gain
-      Name		      "Gain"
-      SID		      "254"
-      Position		      [310, 337, 380, 383]
-      ZOrder		      3
-      Gain		      "K"
-      Multiplication	      "Matrix(K*u) (u vector)"
-      ParamDataTypeStr	      "Inherit: Inherit via internal rule"
-      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-      SaturateOnIntegerOverflow	off
-      Port {
-	PortNumber		1
-	Array {
-	  Type			  "Struct"
-	  Dimension		  1
-	  MATStruct {
-	    Type		    "in"
-	    OpenLoop		    "off"
-	    BusElementName	    ""
-	  }
-	  PropName		  "LinearAnalysisIO"
-	}
-      }
+      BlockType		      FromWorkspace
+      Name		      "From\nWorkspace"
+      SID		      "275"
+      Position		      [135, 303, 200, 327]
+      ZOrder		      12
+      VariableName	      "fb_gain"
+      SampleTime	      "0"
+      ZeroCross		      on
     }
     Block {
       BlockType		      Mux
@@ -1951,11 +1998,21 @@ Model {
       }
     }
     Block {
+      BlockType		      Reshape
+      Name		      "Reshape"
+      SID		      "274"
+      Ports		      [1, 1]
+      Position		      [225, 300, 255, 330]
+      ZOrder		      11
+      OutputDimensionality    "Customize"
+      OutputDimensions	      "[4,16]"
+    }
+    Block {
       BlockType		      Sum
       Name		      "Sum"
       SID		      "256"
       Ports		      [2, 1]
-      Position		      [280, 350, 300, 370]
+      Position		      [260, 350, 280, 370]
       ZOrder		      5
       ShowName		      off
       IconShape		      "round"
@@ -2016,7 +2073,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"117"
 	Block {
 	  BlockType		  Inport
 	  Name			  "V1"
@@ -4665,7 +4722,7 @@ Model {
 	      BlockType		      Inport
 	      Name		      "V1"
 	      SID		      "131"
-	      Position		      [25, 198, 55, 212]
+	      Position		      [50, 148, 80, 162]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
 	    }
@@ -4673,7 +4730,7 @@ Model {
 	      BlockType		      Inport
 	      Name		      "V2"
 	      SID		      "132"
-	      Position		      [25, 323, 55, 337]
+	      Position		      [50, 278, 80, 292]
 	      ZOrder		      -2
 	      Port		      "2"
 	      IconDisplay	      "Port number"
@@ -4682,7 +4739,7 @@ Model {
 	      BlockType		      Inport
 	      Name		      "V3"
 	      SID		      "133"
-	      Position		      [30, 453, 60, 467]
+	      Position		      [50, 408, 80, 422]
 	      ZOrder		      -3
 	      Port		      "3"
 	      IconDisplay	      "Port number"
@@ -4691,7 +4748,7 @@ Model {
 	      BlockType		      Inport
 	      Name		      "V4"
 	      SID		      "134"
-	      Position		      [25, 573, 55, 587]
+	      Position		      [50, 528, 80, 542]
 	      ZOrder		      -4
 	      Port		      "4"
 	      IconDisplay	      "Port number"
@@ -5938,20 +5995,6 @@ Model {
 	    }
 	    Block {
 	      BlockType		      Sum
-	      Name		      "Sum3"
-	      SID		      "204"
-	      Ports		      [2, 1]
-	      Position		      [85, 275, 105, 295]
-	      ZOrder		      -18
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "|++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Sum
 	      Name		      "Sum4"
 	      SID		      "205"
 	      Ports		      [4, 1]
@@ -5959,34 +6002,6 @@ Model {
 	      ZOrder		      -19
 	      ShowName		      off
 	      Inputs		      "++++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum5"
-	      SID		      "206"
-	      Ports		      [2, 1]
-	      Position		      [85, 405, 105, 425]
-	      ZOrder		      -20
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "|++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum6"
-	      SID		      "207"
-	      Ports		      [2, 1]
-	      Position		      [90, 525, 110, 545]
-	      ZOrder		      -21
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "|++"
 	      InputSameDT	      off
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
@@ -6005,20 +6020,6 @@ Model {
 	      SaturateOnIntegerOverflow	off
 	    }
 	    Block {
-	      BlockType		      Sum
-	      Name		      "Sum9"
-	      SID		      "209"
-	      Ports		      [2, 1]
-	      Position		      [90, 145, 110, 165]
-	      ZOrder		      -23
-	      ShowName		      off
-	      IconShape		      "round"
-	      Inputs		      "|++"
-	      InputSameDT	      off
-	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
-	      SaturateOnIntegerOverflow	off
-	    }
-	    Block {
 	      BlockType		      Scope
 	      Name		      "Torque"
 	      SID		      "210"
@@ -6032,50 +6033,6 @@ Model {
 	      "StrPVP('SaveName','ScopeData18'),StrPVP('DataFormat','StructureWithTime'),StrPVP('LimitDataPoints','off'),StrPV"
 	      "P('BlockParamSampleTime','0'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
 	      NumInputPorts	      "4"
-	    }
-	    Block {
-	      BlockType		      Step
-	      Name		      "V1_WP"
-	      SID		      "211"
-	      Position		      [25, 140, 55, 170]
-	      ZOrder		      -25
-	      Time		      "0"
-	      Before		      "V1_WP"
-	      After		      "V1_WP"
-	      SampleTime	      "0"
-	    }
-	    Block {
-	      BlockType		      Step
-	      Name		      "V2_WP"
-	      SID		      "212"
-	      Position		      [25, 270, 55, 300]
-	      ZOrder		      -26
-	      Time		      "0"
-	      Before		      "V2_WP"
-	      After		      "V2_WP"
-	      SampleTime	      "0"
-	    }
-	    Block {
-	      BlockType		      Step
-	      Name		      "V3_WP"
-	      SID		      "213"
-	      Position		      [30, 400, 60, 430]
-	      ZOrder		      -27
-	      Time		      "0"
-	      Before		      "V3_WP"
-	      After		      "V3_WP"
-	      SampleTime	      "0"
-	    }
-	    Block {
-	      BlockType		      Step
-	      Name		      "V4_WP"
-	      SID		      "214"
-	      Position		      [30, 520, 60, 550]
-	      ZOrder		      -28
-	      Time		      "0"
-	      Before		      "V4_WP"
-	      After		      "V4_WP"
-	      SampleTime	      "0"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -6414,64 +6371,32 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      43
-	      SrcBlock		      "Sum9"
+	      ZOrder		      66
+	      SrcBlock		      "V1"
 	      SrcPort		      1
 	      DstBlock		      "Motor/Rotor1"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      46
-	      SrcBlock		      "Sum3"
+	      ZOrder		      65
+	      SrcBlock		      "V2"
 	      SrcPort		      1
 	      DstBlock		      "Motor/Rotor2"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      48
-	      SrcBlock		      "Sum5"
+	      ZOrder		      64
+	      SrcBlock		      "V3"
 	      SrcPort		      1
 	      DstBlock		      "Motor/Rotor3"
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      50
-	      SrcBlock		      "Sum6"
+	      ZOrder		      62
+	      SrcBlock		      "V4"
 	      SrcPort		      1
 	      DstBlock		      "Motor/Rotor4"
 	      DstPort		      1
-	    }
-	    Line {
-	      ZOrder		      51
-	      SrcBlock		      "V1"
-	      SrcPort		      1
-	      Points		      [40, 0]
-	      DstBlock		      "Sum9"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      52
-	      SrcBlock		      "V2"
-	      SrcPort		      1
-	      Points		      [35, 0]
-	      DstBlock		      "Sum3"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      53
-	      SrcBlock		      "V3"
-	      SrcPort		      1
-	      Points		      [30, 0]
-	      DstBlock		      "Sum5"
-	      DstPort		      2
-	    }
-	    Line {
-	      ZOrder		      54
-	      SrcBlock		      "V4"
-	      SrcPort		      1
-	      Points		      [40, 0]
-	      DstBlock		      "Sum6"
-	      DstPort		      2
 	    }
 	    Line {
 	      ZOrder		      57
@@ -6538,13 +6463,6 @@ Model {
 	      ZOrder		      -4
 	      FontSize		      14
 	      FontWeight	      "bold"
-	    }
-	    Annotation {
-	      SID		      "224"
-	      Name		      "Motor\nVoltage\nInputs"
-	      Position		      [65, 98, 100, 136]
-	      InternalMargins	      [0, 0, 0, 0]
-	      ZOrder		      -5
 	    }
 	    Annotation {
 	      SID		      "225"
@@ -7015,7 +6933,7 @@ Model {
       Points		      [61, 0]
       Branch {
 	ZOrder			22
-	Points			[0, 196; -421, 0]
+	Points			[0, 196; -441, 0]
 	DstBlock		"Sum"
 	DstPort			2
       }
@@ -7026,14 +6944,7 @@ Model {
       }
     }
     Line {
-      ZOrder		      23
-      SrcBlock		      "Sum"
-      SrcPort		      1
-      DstBlock		      "Gain"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      24
+      ZOrder		      35
       SrcBlock		      "Constant"
       SrcPort		      1
       DstBlock		      "Sum"
@@ -7068,13 +6979,6 @@ Model {
       DstPort		      16
     }
     Line {
-      ZOrder		      29
-      SrcBlock		      "Gain"
-      SrcPort		      1
-      DstBlock		      "Sum1"
-      DstPort		      1
-    }
-    Line {
       ZOrder		      30
       SrcBlock		      "Sum1"
       SrcPort		      1
@@ -7088,6 +6992,36 @@ Model {
       Points		      [10, 0]
       DstBlock		      "Sum1"
       DstPort		      2
+    }
+    Line {
+      ZOrder		      43
+      SrcBlock		      "From\nWorkspace"
+      SrcPort		      1
+      DstBlock		      "Reshape"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      45
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      Points		      [9, 0; 0, 10]
+      DstBlock		      "Array-Vector\nMultiply"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      47
+      SrcBlock		      "Array-Vector\nMultiply"
+      SrcPort		      1
+      DstBlock		      "Sum1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      48
+      SrcBlock		      "Reshape"
+      SrcPort		      1
+      Points		      [23, 0; 0, 30]
+      DstBlock		      "Array-Vector\nMultiply"
+      DstPort		      1
     }
   }
 }
