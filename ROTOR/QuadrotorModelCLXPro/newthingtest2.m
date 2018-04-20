@@ -7,15 +7,19 @@ load('linsys_1.mat');
 
 A = LinearAnalysisToolProject.LocalVariables(2).Value.A;
 B = LinearAnalysisToolProject.LocalVariables(2).Value.B;
-C = LinearAnalysisToolProject.LocalVariables(2).Value.C;
+Cc = LinearAnalysisToolProject.LocalVariables(2).Value.C;
 D = LinearAnalysisToolProject.LocalVariables(2).Value.D;
 
 %% GENERATE THE FEEDBACK GAIN MATRIX
-Q = 100*eye(16,16); Q(1,1)=3000; Q(3,3)=3000; Q(5,5) = 9000; Q(11,11)=9000;
-R = 0.1*eye(4);
-P = 10000*eye(16,16);
-dt = 0.0001;
-tT = 35;
+bigval = 10^3;
+bigrval = 10^4;
+Q = 100*Cc.'*Cc; 
+Q(1,1) = bigval; Q(3,3) = bigval; Q(5,5) = bigrval; Q(11,11) = bigrval;
+R = 1000*eye(4);
+P = eye(16,16);
+P(1,1) = bigval; P(3,3) = bigval; P(5,5) = bigrval; P(11,11) = bigrval;
+dt = 0.01;
+tT = 400;
 tspan = tT:-dt:0;
 finalS = reshape(P,[16^2,1]);
 [t,S] = ode45(@(t,S) rhs(t,S,A,B,R,Q), tspan, finalS);
@@ -30,9 +34,16 @@ for i = 1:length(tspan)
     igain(j,:) = reshape(R\(B'*Sii),[1,4*16]);
 end
 fb_gain = [flipud(tspan') igain];
+K = C(1:4,:);
 
 %% GENERATE THE TRAJECTORY TO FOLLOW 
-stateref = [10 0 10 0 50 0 0 0 0 0 0 0 0 0 0 0]';
+stateref = [35 0 35 0 50 0 0 0 0 0 0 0 0 0 pi 0]';
+zrt = zeros(length(tspan),1);
+% xtrain = 
+% ytrain = 
+% ztrain = 
+trajectory = [flipud(tspan') ];
+
 
 
 %% DO THE SIMULATION!
@@ -42,26 +53,25 @@ toc
 
 
 %% plotski
-figure;
-curve = animatedline('LineWidth',1);
-set(gca,'XLim',[0 50], 'YLim',[0 50],'Zlim',[0 50]);
-view(285,25);
-tint = 400;
-hold on;
-grid on
-for i=1:length(state.Data(:,1))/tint
-	addpoints(curve, state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5));
-	head = scatter3(state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5), 'filled','MarkerFaceColor','b','MarkerEdgeColor','b');
-	drawnow; hold on;
-	delete(head);
-end
-hold off;
+% figure;
+% curve = animatedline('LineWidth',1);
+% set(gca,'XLim',[0 50], 'YLim',[0 50],'Zlim',[0 50]);
+% view(285,25);
+% tint = 400;
+% hold on;
+% grid on
+% for i=1:length(state.Data(:,1))/tint
+% 	addpoints(curve, state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5));
+% 	head = scatter3(state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5), 'filled','MarkerFaceColor','b','MarkerEdgeColor','b');
+% 	drawnow; hold on;
+% 	delete(head);
+% end
+% hold off;
 
 
 
 % plot the trajectory
-figure; hold on;
-grid on;
+figure;
 plot3(state.Data(:,1), state.Data(:,3), state.Data(:,5)); hold on;
 start = plot3(state.Data(1,1), state.Data(1,3), state.Data(1,5)); hold on;
 start.Color = 'green';
@@ -70,6 +80,7 @@ finished = plot3(state.Data(end,1), state.Data(end,3), state.Data(end,5)); hold 
 finished.Color = 'red';
 finished.Marker = 'o';
 title('Trajectory');
+grid on;
 xlabel('X distance (m)')
 ylabel('Y distance (m)')
 zlabel('Z distance (m)'); hold off;
