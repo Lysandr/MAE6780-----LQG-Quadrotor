@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.49"
+    ComputedModelVersion    "1.55"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -47,7 +47,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-7.0, -7.0, 1934.0, 1054.0]
+      Location		      [-8.0, -8.0, 1936.0, 1056.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -69,11 +69,11 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[2355.0, 1103.0]
-	ZoomFactor		[1.7499999999999998]
-	Offset			[-100.04409285530028, 158.77744853265293]
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"300"
+	Extents			[1882.0, 875.0]
+	ZoomFactor		[1.25]
+	Offset			[-453.99353161063163, 132.39573624352312]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -86,17 +86,17 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[512]
-	Height			[384]
+	Width			[640]
+	Height			[480]
       }
       WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAAB+PwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAAB4AP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAANAD///8AAAlgAAAElAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAeAAAADpAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACR/////wAAAAAAAAAA/////wEAAAEE/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAGV/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAON/////wAAAAAAAAAA/"
+      "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAL9/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
@@ -107,9 +107,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Padraig Lysandrou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Thu Apr 19 16:22:04 2018"
-  RTWModifiedTimeStamp	  446055722
-  ModelVersionFormat	  "1.%<AutoIncrement:49>"
+  LastModifiedDate	  "Mon Apr 30 20:31:09 2018"
+  RTWModifiedTimeStamp	  447021068
+  ModelVersionFormat	  "1.%<AutoIncrement:55>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1219,8 +1219,8 @@ Model {
   }
   System {
     Name		    "newthing"
-    Location		    [-7, -7, 1927, 1047]
-    Open		    on
+    Location		    [-8, -8, 1928, 1048]
+    Open		    off
     PortBlocksUseCompactNotation off
     SetDomainSpec	    off
     DomainSpecType	    "Deduce"
@@ -1234,15 +1234,16 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "175"
+    ZoomFactor		    "200"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "299"
+    SIDHighWatermark	    "345"
     Block {
       BlockType		      Constant
       Name		      "Constant"
       SID		      "273"
       Position		      [10, 345, 65, 375]
       ZOrder		      10
+      Commented		      "on"
       Value		      "stateref"
     }
     Block {
@@ -1261,6 +1262,7 @@ Model {
       ZOrder		      287
       BlockMirror	      on
       NamePlacement	      "alternate"
+      Commented		      "on"
       Value		      "0.01"
     }
     Block {
@@ -1268,7 +1270,7 @@ Model {
       Name		      "Demux"
       SID		      "253"
       Ports		      [1, 4]
-      Position		      [475, 200, 485, 520]
+      Position		      [480, 200, 490, 520]
       ZOrder		      2
       ShowName		      off
       DisplayOption	      "bar"
@@ -1289,7 +1291,6 @@ Model {
       SID		      "291"
       Position		      [10, 413, 75, 437]
       ZOrder		      25
-      Commented		      "on"
       VariableName	      "trajectory"
       SampleTime	      "0"
       ZeroCross		      on
@@ -1298,7 +1299,7 @@ Model {
       BlockType		      Gain
       Name		      "Gain"
       SID		      "281"
-      Position		      [300, 345, 380, 375]
+      Position		      [310, 345, 390, 375]
       ZOrder		      18
       Commented		      "on"
       Gain		      "K"
@@ -1330,6 +1331,7 @@ Model {
       ZOrder		      286
       BlockMirror	      on
       NamePlacement	      "alternate"
+      Commented		      "on"
       InputSameDT	      off
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       RndMeth		      "Floor"
@@ -1340,7 +1342,7 @@ Model {
       Name		      "Mux"
       SID		      "252"
       Ports		      [16, 1]
-      Position		      [635, 199, 645, 521]
+      Position		      [620, 199, 630, 521]
       ZOrder		      1
       ShowName		      off
       Inputs		      "16"
@@ -1360,6 +1362,519 @@ Model {
       }
     }
     Block {
+      BlockType		      SubSystem
+      Name		      "Noise&FilterBlock"
+      SID		      "300"
+      Ports		      [1, 1]
+      Position		      [510, 634, 610, 706]
+      ZOrder		      288
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      RequestExecContextInheritance off
+      ContentPreviewEnabled   on
+      System {
+	Name			"Noise&FilterBlock"
+	Location		[-8, -8, 1928, 1048]
+	Open			on
+	PortBlocksUseCompactNotation off
+	SetDomainSpec		off
+	DomainSpecType		"Deduce"
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"125"
+	Block {
+	  BlockType		  Inport
+	  Name			  "In1"
+	  SID			  "301"
+	  Position		  [-100, 238, -70, 252]
+	  ZOrder		  -1
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  SID			  "306"
+	  Position		  [-165, 600, -135, 630]
+	  ZOrder		  291
+	  Value			  "0.01"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "303"
+	  Ports			  [1, 16]
+	  Position		  [-20, 116, -15, 604]
+	  ZOrder		  1
+	  ShowName		  off
+	  Outputs		  "16"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Product
+	  Name			  "Multiply"
+	  SID			  "307"
+	  Ports			  [2, 1]
+	  Position		  [-100, 607, -70, 638]
+	  ZOrder		  290
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  RndMeth		  "Floor"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "304"
+	  Ports			  [16, 1]
+	  Position		  [450, 107, 455, 613]
+	  ZOrder		  2
+	  ShowName		  off
+	  Inputs		  "16"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  RandomNumber
+	  Name			  "Random\nNumber"
+	  SID			  "308"
+	  Position		  [-165, 640, -135, 670]
+	  ZOrder		  288
+	  Variance		  "0.5"
+	  SampleTime		  "0.1"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum13"
+	  SID			  "333"
+	  Ports			  [2, 1]
+	  Position		  [10, 155, 30, 175]
+	  ZOrder		  315
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum14"
+	  SID			  "334"
+	  Ports			  [2, 1]
+	  Position		  [10, 215, 30, 235]
+	  ZOrder		  317
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum15"
+	  SID			  "335"
+	  Ports			  [2, 1]
+	  Position		  [10, 185, 30, 205]
+	  ZOrder		  316
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum16"
+	  SID			  "338"
+	  Ports			  [2, 1]
+	  Position		  [10, 275, 30, 295]
+	  ZOrder		  321
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum17"
+	  SID			  "325"
+	  Ports			  [2, 1]
+	  Position		  [10, 125, 30, 145]
+	  ZOrder		  303
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum18"
+	  SID			  "339"
+	  Ports			  [2, 1]
+	  Position		  [10, 335, 30, 355]
+	  ZOrder		  323
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum19"
+	  SID			  "340"
+	  Ports			  [2, 1]
+	  Position		  [10, 305, 30, 325]
+	  ZOrder		  322
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum20"
+	  SID			  "341"
+	  Ports			  [2, 1]
+	  Position		  [10, 245, 30, 265]
+	  ZOrder		  320
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum21"
+	  SID			  "342"
+	  Ports			  [2, 1]
+	  Position		  [10, 395, 30, 415]
+	  ZOrder		  325
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum22"
+	  SID			  "343"
+	  Ports			  [2, 1]
+	  Position		  [10, 455, 30, 475]
+	  ZOrder		  327
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum23"
+	  SID			  "344"
+	  Ports			  [2, 1]
+	  Position		  [10, 425, 30, 445]
+	  ZOrder		  326
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum24"
+	  SID			  "345"
+	  Ports			  [2, 1]
+	  Position		  [10, 365, 30, 385]
+	  ZOrder		  324
+	  ShowName		  off
+	  IconShape		  "round"
+	  Inputs		  "|++"
+	  InputSameDT		  off
+	  OutDataTypeStr	  "Inherit: Inherit via internal rule"
+	  SaturateOnIntegerOverflow off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  SID			  "302"
+	  Position		  [615, 303, 645, 317]
+	  ZOrder		  -2
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "In1"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 115]
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "Demux"
+	  SrcPort		  16
+	  DstBlock		  "Mux"
+	  DstPort		  16
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "Demux"
+	  SrcPort		  15
+	  DstBlock		  "Mux"
+	  DstPort		  15
+	}
+	Line {
+	  ZOrder		  7
+	  SrcBlock		  "Demux"
+	  SrcPort		  14
+	  DstBlock		  "Mux"
+	  DstPort		  14
+	}
+	Line {
+	  ZOrder		  8
+	  SrcBlock		  "Demux"
+	  SrcPort		  13
+	  DstBlock		  "Mux"
+	  DstPort		  13
+	}
+	Line {
+	  ZOrder		  9
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  DstBlock		  "Multiply"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  10
+	  SrcBlock		  "Random\nNumber"
+	  SrcPort		  1
+	  Points		  [15, 0]
+	  DstBlock		  "Multiply"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  30
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  DstBlock		  "Sum17"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  31
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  DstBlock		  "Sum13"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  32
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  DstBlock		  "Sum15"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  33
+	  SrcBlock		  "Demux"
+	  SrcPort		  4
+	  DstBlock		  "Sum14"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  34
+	  SrcBlock		  "Demux"
+	  SrcPort		  5
+	  DstBlock		  "Sum20"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  35
+	  SrcBlock		  "Demux"
+	  SrcPort		  6
+	  DstBlock		  "Sum16"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  36
+	  SrcBlock		  "Demux"
+	  SrcPort		  7
+	  DstBlock		  "Sum19"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  37
+	  SrcBlock		  "Demux"
+	  SrcPort		  8
+	  DstBlock		  "Sum18"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  38
+	  SrcBlock		  "Demux"
+	  SrcPort		  9
+	  DstBlock		  "Sum24"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  39
+	  SrcBlock		  "Demux"
+	  SrcPort		  10
+	  DstBlock		  "Sum21"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  40
+	  SrcBlock		  "Demux"
+	  SrcPort		  11
+	  DstBlock		  "Sum23"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  41
+	  SrcBlock		  "Demux"
+	  SrcPort		  12
+	  DstBlock		  "Sum22"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  43
+	  SrcBlock		  "Multiply"
+	  SrcPort		  1
+	  Points		  [85, 0; 0, -109]
+	  Branch {
+	    ZOrder		    53
+	    Points		    [-23, 0; 0, -132; 23, 0]
+	    DstBlock		    "Sum18"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    52
+	    Points		    [0, -9]
+	    Branch {
+	      ZOrder		      67
+	      Points		      [-23, 0; 0, -93]
+	      Branch {
+		ZOrder			68
+		Points			[0, -90]
+		Branch {
+		  ZOrder		  66
+		  Points		  [0, -150; 23, 0]
+		  DstBlock		  "Sum17"
+		  DstPort		  2
+		}
+		Branch {
+		  ZOrder		  55
+		  Points		  [23, 0]
+		  DstBlock		  "Sum16"
+		  DstPort		  2
+		}
+	      }
+	      Branch {
+		ZOrder			51
+		Points			[23, 0]
+		DstBlock		"Sum24"
+		DstPort			2
+	      }
+	    }
+	    Branch {
+	      ZOrder		      54
+	      Points		      [24, 0; 0, -153]
+	      Branch {
+		ZOrder			59
+		Points			[0, -60; -24, 0]
+		DstBlock		"Sum20"
+		DstPort			2
+	      }
+	      Branch {
+		ZOrder			58
+		Points			[-24, 0]
+		DstBlock		"Sum19"
+		DstPort			2
+	      }
+	    }
+	    Branch {
+	      ZOrder		      50
+	      Points		      [0, -7]
+	      Branch {
+		ZOrder			47
+		Points			[-23, 0; 0, -56; 23, 0]
+		DstBlock		"Sum21"
+		DstPort			2
+	      }
+	      Branch {
+		ZOrder			46
+		Points			[0, -8]
+		Branch {
+		  ZOrder		  65
+		  Points		  [24, 0; 0, -288; -24, 0]
+		  DstBlock		  "Sum13"
+		  DstPort		  2
+		}
+		Branch {
+		  ZOrder		  63
+		  Points		  [-23, 0; 0, -228; 23, 0]
+		  DstBlock		  "Sum14"
+		  DstPort		  2
+		}
+		Branch {
+		  ZOrder		  62
+		  Points		  [0, -2]
+		  Branch {
+		    ZOrder		    64
+		    Points		    [-23, 0; 0, -256; 23, 0]
+		    DstBlock		    "Sum15"
+		    DstPort		    2
+		  }
+		  Branch {
+		    ZOrder		    45
+		    DstBlock		    "Sum23"
+		    DstPort		    2
+		  }
+		  Branch {
+		    ZOrder		    44
+		    DstBlock		    "Sum22"
+		    DstPort		    2
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+	Annotation {
+	  SID			  "305"
+	  Name			  "Encoders on the Drone, let's assume perfect observation, there is little room for noise here"
+	  Position		  [10, 14, 410, 28]
+	  InternalMargins	  [0, 0, 0, 0]
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	}
+      }
+    }
+    Block {
       BlockType		      RandomNumber
       Name		      "Random\nNumber"
       SID		      "286"
@@ -1367,6 +1882,7 @@ Model {
       ZOrder		      21
       BlockMirror	      on
       NamePlacement	      "alternate"
+      Commented		      "on"
       Variance		      "0.5"
       SampleTime	      "0.1"
     }
@@ -1387,7 +1903,6 @@ Model {
       Ports		      [1, 1]
       Position		      [110, 410, 140, 440]
       ZOrder		      26
-      Commented		      "on"
       OutputDimensionality    "Customize"
       OutputDimensions	      "[16,1]"
     }
@@ -1418,6 +1933,19 @@ Model {
       InputSameDT	      off
       OutDataTypeStr	      "Inherit: Inherit via internal rule"
       SaturateOnIntegerOverflow	off
+      Port {
+	PortNumber		1
+	Array {
+	  Type			  "Struct"
+	  Dimension		  1
+	  MATStruct {
+	    Type		    "in"
+	    OpenLoop		    "off"
+	    BusElementName	    ""
+	  }
+	  PropName		  "LinearAnalysisIO"
+	}
+      }
     }
     Block {
       BlockType		      Sum
@@ -1474,7 +2002,7 @@ Model {
       RequestExecContextInheritance off
       System {
 	Name			"quadmodel"
-	Location		[-7, -7, 1570, 1009]
+	Location		[-8, -8, 1928, 1048]
 	Open			off
 	PortBlocksUseCompactNotation off
 	SetDomainSpec		off
@@ -1535,7 +2063,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Body dynamics"
-	    Location		    [-7, -7, 1570, 1009]
+	    Location		    [953, 0, 1927, 1047]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -1606,7 +2134,7 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Pitch Stability"
-		Location		[-7, -7, 1570, 1009]
+		Location		[953, 0, 1927, 1047]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetDomainSpec		off
@@ -2298,7 +2826,7 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Yaw Stability"
-		Location		[-7, -7, 1570, 1009]
+		Location		[953, 0, 1927, 1047]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetDomainSpec		off
@@ -2424,7 +2952,7 @@ Model {
 		  BlockType		  Outport
 		  Name			  "Psi"
 		  SID			  "61"
-		  Position		  [495, 38, 525, 52]
+		  Position		  [510, 38, 540, 52]
 		  ZOrder		  -11
 		  IconDisplay		  "Port number"
 		}
@@ -2432,7 +2960,7 @@ Model {
 		  BlockType		  Outport
 		  Name			  "dPsi"
 		  SID			  "62"
-		  Position		  [420, 73, 450, 87]
+		  Position		  [510, 98, 540, 112]
 		  ZOrder		  -12
 		  Port			  "2"
 		  IconDisplay		  "Port number"
@@ -2473,10 +3001,10 @@ Model {
 		  Points		  [5, 0]
 		  Branch {
 		    ZOrder		    6
-		    Points		    [0, 35]
+		    Points		    [0, 60]
 		    Branch {
 		    ZOrder		    7
-		    Points		    [0, 40]
+		    Points		    [0, 15]
 		    DstBlock		    "Gain1"
 		    DstPort		    1
 		    }
@@ -4134,7 +4662,7 @@ Model {
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Motor dynamics"
-	    Location		    [-7, -7, 1570, 1009]
+	    Location		    [953, 0, 1927, 1047]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -6449,7 +6977,7 @@ Model {
       ZOrder		      61
       SrcBlock		      "Gain"
       SrcPort		      1
-      Points		      [10, 0; 0, 12]
+      Points		      [4, 0]
       DstBlock		      "Sum1"
       DstPort		      2
     }
@@ -6494,7 +7022,7 @@ Model {
       ZOrder		      20
       SrcBlock		      "Mux"
       SrcPort		      1
-      Points		      [40, 0]
+      Points		      [55, 0]
       Branch {
 	ZOrder			84
 	DstBlock		"Sum2"

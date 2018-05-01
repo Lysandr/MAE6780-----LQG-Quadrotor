@@ -44,8 +44,8 @@ K = C(1:4,:);
 stateref = [35 0 35 0 50 0 0 0 0 0 0 0 0 0 0 0]';
 zrt = zeros(length(tspan),1);
 zrt2 = zeros(length(tspan),11);
-xtrain = x_0 + 30*sin(8*pi*(flipud(tspan')/tT));
-ytrain = y_0 + 30*cos(8*pi*(flipud(tspan')/tT));
+xtrain = x_0 + 30*cosd(2*pi*(flipud(tspan')/tT));
+ytrain = y_0 + 30*(flipud(tspan')/tT);
 ztrain = z_0 + 30*(flipud(tspan')/tT);
 
 trajectory = [flipud(tspan') [xtrain zrt ytrain zrt ztrain zrt2] ];
