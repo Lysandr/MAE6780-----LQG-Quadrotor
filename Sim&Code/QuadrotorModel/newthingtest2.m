@@ -15,15 +15,26 @@ D = LinearAnalysisToolProject.LocalVariables(2).Value.D;
 % D = LinearAnalysisToolProject.LocalVariables.Value.D;
 
 %% GENERATE THE FEEDBACK GAIN MATRIX
+tic
 bigval = 10^3;
 bigrval = 10^4;
 Q = 100*Cc.'*Cc; 
-Q(1,1) = bigval; Q(3,3) = bigval; Q(5,5) = bigrval; Q(11,11) = bigrval;
-R = 1000*eye(4);
-P = eye(16,16);
-P(1,1) = bigval; P(3,3) = bigval; P(5,5) = bigrval; P(11,11) = bigrval;
+Q(1,1) = 1000*bigrval;
+Q(3,3) = 1000*bigrval;
+Q(5,5) = 1000*bigrval^2;
+Q(11,11)=1000*bigrval;
+Q(13,13)=0;
+Q(14,14)=0;
+Q(15,15)=0;
+Q(16,16)=0;
+R = 3000*eye(4);
+P = zeros(16,16);
+P(1,1) = bigval^2;
+P(3,3) = bigval^2;
+P(5,5) = bigrval^2;
+P(11,11)=bigrval^2;
 dt = 0.01;
-tT = 400;
+tT = 200;
 tspan = tT:-dt:0;
 finalS = reshape(P,[16^2,1]);
 [t,S] = ode45(@(t,S) rhs(t,S,A,B,R,Q), tspan, finalS);
@@ -39,14 +50,17 @@ for i = 1:length(tspan)
 end
 fb_gain = [flipud(tspan') igain];
 K = C(1:4,:);
+toc
+
+
 
 %% GENERATE THE TRAJECTORY TO FOLLOW 
 stateref = [35 0 35 0 50 0 0 0 0 0 0 0 0 0 0 0]';
 zrt = zeros(length(tspan),1);
 zrt2 = zeros(length(tspan),11);
-xtrain = x_0 + 30*sin(8*pi*(flipud(tspan')/tT));
-ytrain = y_0 + 30*cos(8*pi*(flipud(tspan')/tT));
-ztrain = z_0 + 30*(flipud(tspan')/tT);
+xtrain = x_0 + 0.5*sin(8*pi*(flipud(tspan')/tT));
+ytrain = y_0 + 0.5*cos(8*pi*(flipud(tspan')/tT));
+ztrain = z_0 + 0.5*(flipud(tspan')/tT);
 
 trajectory = [flipud(tspan') [xtrain zrt ytrain zrt ztrain zrt2] ];
 
@@ -79,6 +93,8 @@ toc
 % plot the trajectory
 figure;
 plot3(state.Data(:,1), state.Data(:,3), state.Data(:,5)); hold on;
+p = plot3(xtrain, ytrain,ztrain); hold on;
+p.LineStyle = '-';
 start = plot3(state.Data(1,1), state.Data(1,3), state.Data(1,5)); hold on;
 start.Color = 'green';
 start.Marker = 'o';
