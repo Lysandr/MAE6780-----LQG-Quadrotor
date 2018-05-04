@@ -31,6 +31,5 @@ dtheta_0=0;                 % pitch rate
 psi_0=0;                    % yaw 
 dpsi_0=0;                   % yaw rate
 
-x_0_0 = [x_0 dx_0 y_0 dy_0 z_0 dz_0 ...
-    fi_0 dfi_0 theta_0 dtheta_0 psi_0 dpsi_0 hover.'].';
+initvect = [x_0 dx_0 y_0 dy_0 z_0 dz_0 fi_0 dfi_0 ]
 

@@ -4,15 +4,15 @@ clear all; close all; clc
 initial_conditions
 LoadQuadrotorConst_XPro1a
 load('linsys_1.mat');
-
+% global A
+% global B
+% global Cc
+% global D
 A = LinearAnalysisToolProject.LocalVariables(2).Value.A;
 B = LinearAnalysisToolProject.LocalVariables(2).Value.B;
 Cc = LinearAnalysisToolProject.LocalVariables(2).Value.C;
 D = LinearAnalysisToolProject.LocalVariables(2).Value.D;
-% A = LinearAnalysisToolProject.LocalVariables.Value.A;
-% B = LinearAnalysisToolProject.LocalVariables.Value.B;
-% Cc = LinearAnalysisToolProject.LocalVariables.Value.C;
-% D = LinearAnalysisToolProject.LocalVariables.Value.D;
+
 
 %% GENERATE THE FEEDBACK GAIN MATRIX
 tic
@@ -52,7 +52,16 @@ fb_gain = [flipud(tspan') igain];
 K = C(1:4,:);
 toc
 
-
+%% initialize Kalman Filter and covariances
+S_0_0 = zeros(16,16);
+G = [zeros(12,4);eye(4)];
+H = eye(16);
+Sv= 0.01*eye(16);
+Sv(13,13)= 0.0001;
+Sv(14,14)= 0.0001;
+Sv(15,15)= 0.0001;
+Sv(16,16)= 0.0001;
+Sw = 0.05*eye(4);
 
 %% GENERATE THE TRAJECTORY TO FOLLOW 
 stateref = [35 0 35 0 50 0 0 0 0 0 0 0 0 0 0 0]';
@@ -61,7 +70,6 @@ zrt2 = zeros(length(tspan),11);
 xtrain = x_0 + 0.5*sin(8*pi*(flipud(tspan')/tT));
 ytrain = y_0 + 0.5*cos(8*pi*(flipud(tspan')/tT));
 ztrain = z_0 + 0.5*(flipud(tspan')/tT);
-
 trajectory = [flipud(tspan') [xtrain zrt ytrain zrt ztrain zrt2] ];
 
 
@@ -73,6 +81,7 @@ toc
 
 
 %% plotski
+
 % figure;
 % curve = animatedline('LineWidth',1);
 % set(gca,'XLim',[0 50], 'YLim',[0 50],'Zlim',[0 50]);
@@ -87,8 +96,6 @@ toc
 % 	delete(head);
 % end
 % hold off;
-
-
 
 % plot the trajectory
 figure;
@@ -120,6 +127,20 @@ subplot(6,1,5)
 plot(state.Time, state.Data(:,9)); title('Theta vs time')
 subplot(6,1,6)
 plot(state.Time, state.Data(:,11)); title('Psi vs time')
+
+%STATES
+figure; subplot(6,1,1)
+plot(estimate.Time, estimate.Data(:,1)); title('x_est vs time')
+subplot(6,1,2)
+plot(estimate.Time, estimate.Data(:,3)); title('y_est vs time')
+subplot(6,1,3)
+plot(estimate.Time, estimate.Data(:,5)); title('z_est vs  time')
+subplot(6,1,4)
+plot(estimate.Time, estimate.Data(:,7)); title('Phi_est vs time')
+subplot(6,1,5)
+plot(estimate.Time, estimate.Data(:,9)); title('Theta_est vs time')
+subplot(6,1,6)
+plot(estimate.Time, estimate.Data(:,11)); title('Psi_est vs time')
 
 % print off the final value
 finalstate = [state.Data(end,1) state.Data(end,3) state.Data(end,5)]
