@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.115"
+    ComputedModelVersion    "1.116"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -16,13 +16,7 @@ Model {
     HasTerminateEvent	    0
     IsExportFunctionModel   0
     NumParameterArguments   0
-    NumExternalFileReferences 1
-    ExternalFileReference {
-      Reference		      "ctrlSharedLib/Kalman Filter"
-      Path		      "newthing/Kalman Filter"
-      SID		      "547"
-      Type		      "LIBRARY_BLOCK"
-    }
+    NumExternalFileReferences 0
     OrderedModelArguments   1
   }
   DiagnosticSuppressor	  "on"
@@ -75,7 +69,7 @@ Model {
 	Dimension		6
 	Object {
 	  $ObjectID		  5
-	  IsActive		  [1]
+	  IsActive		  [0]
 	  ViewObjType		  "SimulinkTopLevel"
 	  LoadSaveID		  "0"
 	  Extents		  [920.0, 863.0]
@@ -93,7 +87,7 @@ Model {
 	}
 	Object {
 	  $ObjectID		  7
-	  IsActive		  [0]
+	  IsActive		  [1]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "395"
 	  Extents		  [920.0, 863.0]
@@ -161,9 +155,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Padraig Lysandrou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri May 04 17:37:56 2018"
-  RTWModifiedTimeStamp	  447357246
-  ModelVersionFormat	  "1.%<AutoIncrement:115>"
+  LastModifiedDate	  "Fri May 04 17:54:24 2018"
+  RTWModifiedTimeStamp	  447369865
+  ModelVersionFormat	  "1.%<AutoIncrement:116>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -4154,55 +4148,6 @@ Model {
       SaturateOnIntegerOverflow	off
     }
     Block {
-      BlockType		      Reference
-      Name		      "Kalman Filter"
-      SID		      "547"
-      Ports		      [2, 1]
-      Position		      [400, 699, 455, 761]
-      ZOrder		      309
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      LibraryVersion	      "1.652"
-      SourceBlock	      "ctrlSharedLib/Kalman Filter"
-      SourceType	      "ctrlKalmanFilter"
-      SourceProductName	      "Control System Toolbox"
-      SourceProductBaseCode   "CT"
-      ContentPreviewEnabled   on
-      TimeDomain	      "Discrete-Time"
-      UseCurrentEstimator     on
-      ModelSource	      "Individual A, B, C, D matrices"
-      ModelSourceVariable     "ss(0.95,1,1,0,1)"
-      A			      "A"
-      B			      "B"
-      C			      "Cc"
-      D			      "D"
-      NumberOfStates	      "1"
-      NumberOfInputs	      "1"
-      NumberOfOutputs	      "1"
-      InitialEstimateSource   "Dialog"
-      X0		      "x_0_0"
-      P0		      "10"
-      UseK		      off
-      UseGH		      on
-      NumberOfProcessNoiseInputs "1"
-      G			      "G"
-      TimeInvariantG	      on
-      H			      "G"
-      TimeInvariantH	      on
-      Q			      "0.05"
-      TimeInvariantQ	      on
-      R			      "1"
-      TimeInvariantR	      on
-      N			      "0"
-      TimeInvariantN	      on
-      AddInputPort	      on
-      AddEnablePort	      off
-      ExternalReset	      "None"
-      OutputEstimatedY	      off
-      OutputP		      off
-      Ts		      "-1"
-    }
-    Block {
       BlockType		      SubSystem
       Name		      "KalmanFilter"
       SID		      "395"
@@ -4211,7 +4156,6 @@ Model {
       ZOrder		      307
       BlockMirror	      on
       NamePlacement	      "alternate"
-      Commented		      "on"
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
       System {
@@ -12599,10 +12543,10 @@ Model {
       SrcPort		      1
       Points		      [17, 0]
       Branch {
-	ZOrder			209
-	Points			[0, 300; 148, 0; 0, 55]
-	DstBlock		"Kalman Filter"
-	DstPort			1
+	ZOrder			212
+	Points			[0, 274; 153, 0; 0, -29]
+	DstBlock		"KalmanFilter"
+	DstPort			2
       }
       Branch {
 	ZOrder			199
@@ -12611,12 +12555,12 @@ Model {
       }
     }
     Line {
-      ZOrder		      210
+      ZOrder		      213
       SrcBlock		      "v: obs noise"
       SrcPort		      1
-      Points		      [0, 210]
-      DstBlock		      "Kalman Filter"
-      DstPort		      2
+      Points		      [0, 45]
+      DstBlock		      "KalmanFilter"
+      DstPort		      1
     }
     Line {
       ZOrder		      197
@@ -12629,17 +12573,19 @@ Model {
       ZOrder		      206
       SrcBlock		      "KalmanFilter"
       SrcPort		      1
-      Points		      [-61, 0; 0, 55]
-      DstBlock		      "To Workspace1"
-      DstPort		      1
-    }
-    Line {
-      ZOrder		      211
-      SrcBlock		      "Kalman Filter"
-      SrcPort		      1
-      Points		      [-245, 0]
-      DstBlock		      "Sum"
-      DstPort		      2
+      Points		      [-61, 0]
+      Branch {
+	ZOrder			215
+	Points			[-144, 0]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			214
+	Points			[0, 55]
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
     }
   }
 }
