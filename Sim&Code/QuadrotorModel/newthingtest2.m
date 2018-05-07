@@ -4,14 +4,11 @@ clear all; close all; clc
 initial_conditions
 LoadQuadrotorConst_XPro1a
 load('linsys_1.mat');
-% global A
-% global B
-% global Cc
-% global D
 A = LinearAnalysisToolProject.LocalVariables(2).Value.A;
 B = LinearAnalysisToolProject.LocalVariables(2).Value.B;
 Cc = LinearAnalysisToolProject.LocalVariables(2).Value.C;
 D = LinearAnalysisToolProject.LocalVariables(2).Value.D;
+
 
 
 %% GENERATE THE FEEDBACK GAIN MATRIX
@@ -53,15 +50,17 @@ K = C(1:4,:);
 toc
 
 %% initialize Kalman Filter and covariances
-S_0_0 = zeros(16,16);
-G = [zeros(12,4);eye(4)];
+S_0_0 = 10^7*eye(16);
+G = eye(16);
 H = eye(16);
 Sv= 0.01*eye(16);
 Sv(13,13)= 0.0001;
 Sv(14,14)= 0.0001;
 Sv(15,15)= 0.0001;
 Sv(16,16)= 0.0001;
-Sw = 0.05*eye(4);
+Sv = Sv^4;
+Sw = Sv;
+
 
 %% GENERATE THE TRAJECTORY TO FOLLOW 
 stateref = [35 0 35 0 50 0 0 0 0 0 0 0 0 0 0 0]';
@@ -82,20 +81,20 @@ toc
 
 %% plotski
 
-% figure;
-% curve = animatedline('LineWidth',1);
-% set(gca,'XLim',[0 50], 'YLim',[0 50],'Zlim',[0 50]);
-% view(285,25);
-% tint = 400;
-% hold on;
-% grid on
-% for i=1:length(state.Data(:,1))/tint
-% 	addpoints(curve, state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5));
-% 	head = scatter3(state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5), 'filled','MarkerFaceColor','b','MarkerEdgeColor','b');
-% 	drawnow; hold on;
-% 	delete(head);
-% end
-% hold off;
+figure;
+curve = animatedline('LineWidth',1);
+set(gca,'XLim',[-1 1], 'YLim',[-1 1],'Zlim',[28 32]);
+view(285,25);
+tint = 100;
+hold on;
+grid on
+for i=1:length(state.Data(:,1))/tint
+	addpoints(curve, state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5));
+	head = scatter3(state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5), 'filled','MarkerFaceColor','b','MarkerEdgeColor','b');
+	drawnow; hold on;
+	delete(head);
+end
+hold off;
 
 % plot the trajectory
 figure;

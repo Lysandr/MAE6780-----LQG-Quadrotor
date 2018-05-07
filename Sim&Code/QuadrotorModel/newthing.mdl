@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.116"
+    ComputedModelVersion    "1.201"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -16,13 +16,7 @@ Model {
     HasTerminateEvent	    0
     IsExportFunctionModel   0
     NumParameterArguments   0
-    NumExternalFileReferences 1
-    ExternalFileReference {
-      Reference		      "ctrlSharedLib/Kalman Filter"
-      Path		      "newthing/Kalman Filter"
-      SID		      "547"
-      Type		      "LIBRARY_BLOCK"
-    }
+    NumExternalFileReferences 0
     OrderedModelArguments   1
   }
   DiagnosticSuppressor	  "on"
@@ -53,7 +47,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-7.0, 0.0, 974.0, 1047.0]
+      Location		      [-8.0, -8.0, 1936.0, 1056.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -76,56 +70,56 @@ Model {
 	Object {
 	  $ObjectID		  5
 	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [920.0, 863.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-60.614806318786975, 59.736413500050389]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "395"
+	  Extents		  [1882.0, 872.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-376.8419285600703, 238.46898371940537]
 	}
 	Object {
 	  $ObjectID		  6
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
 	  LoadSaveID		  "512"
-	  Extents		  [920.0, 863.0]
+	  Extents		  [1882.0, 872.0]
 	  ZoomFactor		  [1.25]
 	  Offset		  [-258.8, -285.59999999999997]
 	}
 	Object {
 	  $ObjectID		  7
 	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "395"
-	  Extents		  [920.0, 863.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [-117.22572547939673, -53.574690939405478]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1882.0, 872.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-320.7159581011357, 114.52857257111067]
 	}
 	Object {
 	  $ObjectID		  8
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "1"
-	  Extents		  [920.0, 863.0]
-	  ZoomFactor		  [1.17]
-	  Offset		  [-179.01709401709405, -16.230769230769226]
+	  LoadSaveID		  "130"
+	  Extents		  [1882.0, 872.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-99.499588647153629, 130.36656886611269]
 	}
 	Object {
 	  $ObjectID		  9
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "130"
-	  Extents		  [920.0, 863.0]
-	  ZoomFactor		  [1.25]
-	  Offset		  [-98.800000000000011, 34.400000000000034]
+	  LoadSaveID		  "364"
+	  Extents		  [1882.0, 872.0]
+	  ZoomFactor		  [1.75]
+	  Offset		  [-316.794907967409, 612.28875996020611]
 	}
 	Object {
 	  $ObjectID		  10
 	  IsActive		  [0]
 	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "364"
-	  Extents		  [920.0, 863.0]
+	  LoadSaveID		  "355"
+	  Extents		  [1882.0, 872.0]
 	  ZoomFactor		  [1.0]
-	  Offset		  [-229.25200415652154, 165.11343432042418]
+	  Offset		  [-226.00000000000006, -347.5]
 	}
 	PropName		"EditorsInfo"
       }
@@ -147,7 +141,7 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAO+AAADmwAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAeAAAADpAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAL9/////wAAAAAAAAAA/"
@@ -161,9 +155,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Padraig Lysandrou"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri May 04 17:54:24 2018"
-  RTWModifiedTimeStamp	  447357246
-  ModelVersionFormat	  "1.%<AutoIncrement:116>"
+  LastModifiedDate	  "Mon May 07 19:06:44 2018"
+  RTWModifiedTimeStamp	  447620804
+  ModelVersionFormat	  "1.%<AutoIncrement:201>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -2365,7 +2359,7 @@ Model {
 	  StopTime		  "tT"
 	  AbsTol		  "auto"
 	  AutoScaleAbsTol	  "on"
-	  FixedStep		  "auto"
+	  FixedStep		  "dt"
 	  InitialStep		  "auto"
 	  MaxOrder		  5
 	  ZcThreshold		  "auto"
@@ -2376,16 +2370,16 @@ Model {
 	  MaxStep		  "auto"
 	  MinStep		  "auto"
 	  MaxConsecutiveMinStep	  "1"
-	  RelTol		  "1e-3"
+	  RelTol		  "1e-4"
 	  EnableMultiTasking	  on
 	  ConcurrentTasks	  off
-	  Solver		  "ode45"
-	  SolverName		  "ode45"
+	  Solver		  "FixedStepAuto"
+	  SolverName		  "FixedStepAuto"
 	  SolverJacobianMethodControl "auto"
 	  ShapePreserveControl	  "DisableAll"
 	  ZeroCrossControl	  "UseLocalSettings"
 	  ZeroCrossAlgorithm	  "Nonadaptive"
-	  AlgebraicLoopSolver	  "LineSearch"
+	  AlgebraicLoopSolver	  "TrustRegion"
 	  SolverInfoToggleStatus  on
 	  IsAutoAppliedInSIP	  off
 	  SolverResetMethod	  "Fast"
@@ -3041,7 +3035,7 @@ Model {
       Name		      "Configuration3"
       ExtraOptions	      ""
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition    [ 228, 193, 1148, 833 ]
+      ConfigPrmDlgPosition    [ 498, 193, 1418, 833 ]
     }
     PropName		    "ConfigurationSets"
   }
@@ -3380,7 +3374,7 @@ Model {
   }
   System {
     Name		    "newthing"
-    Location		    [-7, 0, 967, 1047]
+    Location		    [-8, -8, 1928, 1048]
     Open		    on
     PortBlocksUseCompactNotation off
     SetDomainSpec	    off
@@ -3395,9 +3389,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "547"
+    SIDHighWatermark	    "572"
     Block {
       BlockType		      Constant
       Name		      "Constant"
@@ -3429,7 +3423,7 @@ Model {
       BlockType		      FromWorkspace
       Name		      "From\nWorkspace"
       SID		      "275"
-      Position		      [30, 258, 95, 282]
+      Position		      [30, 283, 95, 307]
       ZOrder		      12
       VariableName	      "fb_gain"
       SampleTime	      "0"
@@ -3449,7 +3443,7 @@ Model {
       BlockType		      Gain
       Name		      "Gain"
       SID		      "281"
-      Position		      [190, 345, 270, 375]
+      Position		      [180, 345, 260, 375]
       ZOrder		      18
       Commented		      "on"
       Gain		      "K"
@@ -3459,69 +3453,19 @@ Model {
       SaturateOnIntegerOverflow	off
     }
     Block {
-      BlockType		      Reference
-      Name		      "Kalman Filter"
-      SID		      "547"
-      Ports		      [2, 1]
-      Position		      [400, 699, 455, 761]
-      ZOrder		      309
-      BlockMirror	      on
-      NamePlacement	      "alternate"
-      LibraryVersion	      "1.652"
-      SourceBlock	      "ctrlSharedLib/Kalman Filter"
-      SourceType	      "ctrlKalmanFilter"
-      SourceProductName	      "Control System Toolbox"
-      SourceProductBaseCode   "CT"
-      ContentPreviewEnabled   on
-      TimeDomain	      "Discrete-Time"
-      UseCurrentEstimator     on
-      ModelSource	      "Individual A, B, C, D matrices"
-      ModelSourceVariable     "ss(0.95,1,1,0,1)"
-      A			      "A"
-      B			      "B"
-      C			      "Cc"
-      D			      "D"
-      NumberOfStates	      "1"
-      NumberOfInputs	      "1"
-      NumberOfOutputs	      "1"
-      InitialEstimateSource   "Dialog"
-      X0		      "x_0_0"
-      P0		      "10"
-      UseK		      off
-      UseGH		      on
-      NumberOfProcessNoiseInputs "1"
-      G			      "G"
-      TimeInvariantG	      on
-      H			      "G"
-      TimeInvariantH	      on
-      Q			      "0.05"
-      TimeInvariantQ	      on
-      R			      "1"
-      TimeInvariantR	      on
-      N			      "0"
-      TimeInvariantN	      on
-      AddInputPort	      on
-      AddEnablePort	      off
-      ExternalReset	      "None"
-      OutputEstimatedY	      off
-      OutputP		      off
-      Ts		      "-1"
-    }
-    Block {
       BlockType		      SubSystem
       Name		      "KalmanFilter"
       SID		      "395"
-      Ports		      [2, 1]
-      Position		      [360, 565, 465, 620]
+      Ports		      [3, 2]
+      Position		      [450, 617, 555, 673]
       ZOrder		      307
       BlockMirror	      on
       NamePlacement	      "alternate"
-      Commented		      "on"
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
       System {
 	Name			"KalmanFilter"
-	Location		[-7, 0, 967, 1047]
+	Location		[-8, -8, 1928, 1048]
 	Open			on
 	PortBlocksUseCompactNotation off
 	SetDomainSpec		off
@@ -3541,7 +3485,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "measurement"
 	  SID			  "396"
-	  Position		  [360, 33, 390, 47]
+	  Position		  [340, 113, 370, 127]
 	  ZOrder		  -1
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
@@ -3551,7 +3495,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "input"
 	  SID			  "398"
-	  Position		  [390, 58, 420, 72]
+	  Position		  [340, 153, 370, 167]
 	  ZOrder		  311
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
@@ -3559,10 +3503,21 @@ Model {
 	  IconDisplay		  "Port number"
 	}
 	Block {
+	  BlockType		  Inport
+	  Name			  "input1"
+	  SID			  "563"
+	  Position		  [340, 233, 370, 247]
+	  ZOrder		  334
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
 	  BlockType		  Constant
 	  Name			  "Constant"
 	  SID			  "401"
-	  Position		  [335, 125, 365, 155]
+	  Position		  [255, 310, 285, 340]
 	  ZOrder		  314
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
@@ -3572,7 +3527,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant1"
 	  SID			  "402"
-	  Position		  [375, 150, 405, 180]
+	  Position		  [255, 340, 285, 370]
 	  ZOrder		  315
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
@@ -3580,9 +3535,59 @@ Model {
 	}
 	Block {
 	  BlockType		  Constant
+	  Name			  "Constant10"
+	  SID			  "567"
+	  Position		  [255, 640, 285, 670]
+	  ZOrder		  338
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "Iyy"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant11"
+	  SID			  "568"
+	  Position		  [255, 610, 285, 640]
+	  ZOrder		  339
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "Ixx"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant12"
+	  SID			  "569"
+	  Position		  [255, 670, 285, 700]
+	  ZOrder		  340
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "Izz"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant13"
+	  SID			  "571"
+	  Position		  [255, 700, 285, 730]
+	  ZOrder		  342
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "Jr"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant14"
+	  SID			  "572"
+	  Position		  [255, 730, 285, 760]
+	  ZOrder		  343
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "L"
+	}
+	Block {
+	  BlockType		  Constant
 	  Name			  "Constant2"
 	  SID			  "403"
-	  Position		  [415, 175, 445, 205]
+	  Position		  [255, 370, 285, 400]
 	  ZOrder		  316
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
@@ -3592,7 +3597,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant3"
 	  SID			  "407"
-	  Position		  [335, 200, 365, 230]
+	  Position		  [255, 400, 285, 430]
 	  ZOrder		  320
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
@@ -3602,7 +3607,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant4"
 	  SID			  "408"
-	  Position		  [375, 225, 405, 255]
+	  Position		  [255, 430, 285, 460]
 	  ZOrder		  321
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
@@ -3612,7 +3617,7 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant5"
 	  SID			  "409"
-	  Position		  [415, 250, 445, 280]
+	  Position		  [255, 460, 285, 490]
 	  ZOrder		  322
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
@@ -3622,18 +3627,61 @@ Model {
 	  BlockType		  Constant
 	  Name			  "Constant6"
 	  SID			  "410"
-	  Position		  [335, 275, 365, 305]
+	  Position		  [255, 490, 285, 520]
 	  ZOrder		  323
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
 	  Value			  "Sw"
 	}
 	Block {
+	  BlockType		  Constant
+	  Name			  "Constant7"
+	  SID			  "564"
+	  Position		  [255, 520, 285, 550]
+	  ZOrder		  335
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "dt"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant8"
+	  SID			  "565"
+	  Position		  [255, 550, 285, 580]
+	  ZOrder		  336
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "ga"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant9"
+	  SID			  "566"
+	  Position		  [255, 580, 285, 610]
+	  ZOrder		  337
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Value			  "m"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  "Demux"
+	  SID			  "562"
+	  Ports			  [1, 5]
+	  Position		  [270, 206, 275, 274]
+	  ZOrder		  333
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  ShowName		  off
+	  Outputs		  "5"
+	  DisplayOption		  "bar"
+	}
+	Block {
 	  BlockType		  SubSystem
-	  Name			  "MATLAB Function"
+	  Name			  "Kalman Filter"
 	  SID			  "400"
-	  Ports			  [11, 2]
-	  Position		  [160, 31, 235, 299]
+	  Ports			  [24, 3]
+	  Position		  [160, 49, 220, 751]
 	  ZOrder		  313
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
@@ -3644,7 +3692,7 @@ Model {
 	  SFBlockType		  "MATLAB Function"
 	  ContentPreviewEnabled	  on
 	  System {
-	    Name		    "MATLAB Function"
+	    Name		    "Kalman Filter"
 	    Location		    [223, 338, 826, 833]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
@@ -3661,103 +3709,220 @@ Model {
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
 	    ZoomFactor		    "100"
-	    SIDHighWatermark	    "33"
-	    Block {
-	      BlockType		      Inport
-	      Name		      "y_t1"
-	      SID		      "400::25"
-	      Position		      [20, 101, 40, 119]
-	      ZOrder		      16
-	      IconDisplay	      "Port number"
-	    }
-	    Block {
-	      BlockType		      Inport
-	      Name		      "u_t"
-	      SID		      "400::28"
-	      Position		      [20, 136, 40, 154]
-	      ZOrder		      19
-	      Port		      "2"
-	      IconDisplay	      "Port number"
-	    }
+	    SIDHighWatermark	    "48"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "x_t_t"
 	      SID		      "400::26"
-	      Position		      [20, 171, 40, 189]
+	      Position		      [20, 101, 40, 119]
 	      ZOrder		      17
-	      Port		      "3"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "S_t_t"
 	      SID		      "400::27"
-	      Position		      [20, 206, 40, 224]
+	      Position		      [20, 136, 40, 154]
 	      ZOrder		      18
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "y_t1"
+	      SID		      "400::25"
+	      Position		      [20, 171, 40, 189]
+	      ZOrder		      16
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "u_t"
+	      SID		      "400::35"
+	      Position		      [20, 206, 40, 224]
+	      ZOrder		      26
 	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "U1"
+	      SID		      "400::37"
+	      Position		      [20, 246, 40, 264]
+	      ZOrder		      28
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "U2"
+	      SID		      "400::38"
+	      Position		      [20, 281, 40, 299]
+	      ZOrder		      29
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "U3"
+	      SID		      "400::39"
+	      Position		      [20, 316, 40, 334]
+	      ZOrder		      30
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "U4"
+	      SID		      "400::40"
+	      Position		      [20, 351, 40, 369]
+	      ZOrder		      31
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Omega"
+	      SID		      "400::41"
+	      Position		      [20, 386, 40, 404]
+	      ZOrder		      32
+	      Port		      "9"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "A"
 	      SID		      "400::1"
-	      Position		      [20, 246, 40, 264]
+	      Position		      [20, 426, 40, 444]
 	      ZOrder		      -1
-	      Port		      "5"
+	      Port		      "10"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "B"
 	      SID		      "400::22"
-	      Position		      [20, 281, 40, 299]
+	      Position		      [20, 461, 40, 479]
 	      ZOrder		      13
-	      Port		      "6"
+	      Port		      "11"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "C"
 	      SID		      "400::23"
-	      Position		      [20, 316, 40, 334]
+	      Position		      [20, 496, 40, 514]
 	      ZOrder		      14
-	      Port		      "7"
+	      Port		      "12"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "G"
 	      SID		      "400::29"
-	      Position		      [20, 351, 40, 369]
+	      Position		      [20, 531, 40, 549]
 	      ZOrder		      20
-	      Port		      "8"
+	      Port		      "13"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "H"
 	      SID		      "400::30"
-	      Position		      [20, 386, 40, 404]
+	      Position		      [20, 566, 40, 584]
 	      ZOrder		      21
-	      Port		      "9"
+	      Port		      "14"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Sv"
 	      SID		      "400::31"
-	      Position		      [20, 426, 40, 444]
+	      Position		      [20, 606, 40, 624]
 	      ZOrder		      22
-	      Port		      "10"
+	      Port		      "15"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Sw"
 	      SID		      "400::32"
-	      Position		      [20, 461, 40, 479]
+	      Position		      [20, 641, 40, 659]
 	      ZOrder		      23
-	      Port		      "11"
+	      Port		      "16"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "dt"
+	      SID		      "400::36"
+	      Position		      [20, 676, 40, 694]
+	      ZOrder		      27
+	      Port		      "17"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ga"
+	      SID		      "400::42"
+	      Position		      [20, 711, 40, 729]
+	      ZOrder		      33
+	      Port		      "18"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "m"
+	      SID		      "400::43"
+	      Position		      [20, 746, 40, 764]
+	      ZOrder		      34
+	      Port		      "19"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Ixx"
+	      SID		      "400::44"
+	      Position		      [20, 786, 40, 804]
+	      ZOrder		      35
+	      Port		      "20"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Iyy"
+	      SID		      "400::45"
+	      Position		      [20, 821, 40, 839]
+	      ZOrder		      36
+	      Port		      "21"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Izz"
+	      SID		      "400::46"
+	      Position		      [20, 856, 40, 874]
+	      ZOrder		      37
+	      Port		      "22"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "Jr"
+	      SID		      "400::47"
+	      Position		      [20, 891, 40, 909]
+	      ZOrder		      38
+	      Port		      "23"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "L"
+	      SID		      "400::48"
+	      Position		      [20, 926, 40, 944]
+	      ZOrder		      39
+	      Port		      "24"
 	      IconDisplay	      "Port number"
 	    }
 	    Block {
@@ -3765,7 +3930,7 @@ Model {
 	      Name		      " Demux "
 	      SID		      "400::20"
 	      Ports		      [1, 1]
-	      Position		      [270, 230, 320, 270]
+	      Position		      [270, 245, 320, 285]
 	      ZOrder		      11
 	      Outputs		      "1"
 	    }
@@ -3774,11 +3939,11 @@ Model {
 	      Name		      " SFunction "
 	      SID		      "400::19"
 	      Tag		      "Stateflow S-Function newthing 2"
-	      Ports		      [11, 3]
-	      Position		      [180, 110, 230, 350]
+	      Ports		      [24, 4]
+	      Position		      [180, 110, 230, 610]
 	      ZOrder		      10
 	      FunctionName	      "sf_sfun"
-	      PortCounts	      "[11 3]"
+	      PortCounts	      "[24 4]"
 	      SFunctionDeploymentMode off
 	      EnableBusSupport	      on
 	      SFcnIsStateOwnerBlock   off
@@ -3790,12 +3955,16 @@ Model {
 		PortNumber		3
 		Name			"S_t1_t1"
 	      }
+	      Port {
+		PortNumber		4
+		Name			"K"
+	      }
 	    }
 	    Block {
 	      BlockType		      Terminator
 	      Name		      " Terminator "
 	      SID		      "400::21"
-	      Position		      [460, 241, 480, 259]
+	      Position		      [460, 256, 480, 274]
 	      ZOrder		      12
 	    }
 	    Block {
@@ -3815,86 +3984,186 @@ Model {
 	      Port		      "2"
 	      IconDisplay	      "Port number"
 	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "K"
+	      SID		      "400::34"
+	      Position		      [460, 171, 480, 189]
+	      ZOrder		      25
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
 	    Line {
-	      ZOrder		      176
-	      SrcBlock		      "y_t1"
+	      ZOrder		      716
+	      SrcBlock		      "x_t_t"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      177
-	      SrcBlock		      "u_t"
+	      ZOrder		      717
+	      SrcBlock		      "S_t_t"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      2
 	    }
 	    Line {
-	      ZOrder		      178
-	      SrcBlock		      "x_t_t"
+	      ZOrder		      718
+	      SrcBlock		      "y_t1"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      3
 	    }
 	    Line {
-	      ZOrder		      179
-	      SrcBlock		      "S_t_t"
+	      ZOrder		      719
+	      SrcBlock		      "u_t"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      4
 	    }
 	    Line {
-	      ZOrder		      180
-	      SrcBlock		      "A"
+	      ZOrder		      720
+	      SrcBlock		      "U1"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      5
 	    }
 	    Line {
-	      ZOrder		      181
-	      SrcBlock		      "B"
+	      ZOrder		      721
+	      SrcBlock		      "U2"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      6
 	    }
 	    Line {
-	      ZOrder		      182
-	      SrcBlock		      "C"
+	      ZOrder		      722
+	      SrcBlock		      "U3"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      7
 	    }
 	    Line {
-	      ZOrder		      183
-	      SrcBlock		      "G"
+	      ZOrder		      723
+	      SrcBlock		      "U4"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      8
 	    }
 	    Line {
-	      ZOrder		      184
-	      SrcBlock		      "H"
+	      ZOrder		      724
+	      SrcBlock		      "Omega"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      9
 	    }
 	    Line {
-	      ZOrder		      185
-	      SrcBlock		      "Sv"
+	      ZOrder		      725
+	      SrcBlock		      "A"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      10
 	    }
 	    Line {
-	      ZOrder		      186
-	      SrcBlock		      "Sw"
+	      ZOrder		      726
+	      SrcBlock		      "B"
 	      SrcPort		      1
 	      DstBlock		      " SFunction "
 	      DstPort		      11
 	    }
 	    Line {
+	      ZOrder		      727
+	      SrcBlock		      "C"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      12
+	    }
+	    Line {
+	      ZOrder		      728
+	      SrcBlock		      "G"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      13
+	    }
+	    Line {
+	      ZOrder		      729
+	      SrcBlock		      "H"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      14
+	    }
+	    Line {
+	      ZOrder		      730
+	      SrcBlock		      "Sv"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      15
+	    }
+	    Line {
+	      ZOrder		      731
+	      SrcBlock		      "Sw"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      16
+	    }
+	    Line {
+	      ZOrder		      732
+	      SrcBlock		      "dt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      17
+	    }
+	    Line {
+	      ZOrder		      733
+	      SrcBlock		      "ga"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      18
+	    }
+	    Line {
+	      ZOrder		      734
+	      SrcBlock		      "m"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      19
+	    }
+	    Line {
+	      ZOrder		      735
+	      SrcBlock		      "Ixx"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      20
+	    }
+	    Line {
+	      ZOrder		      736
+	      SrcBlock		      "Iyy"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      21
+	    }
+	    Line {
+	      ZOrder		      737
+	      SrcBlock		      "Izz"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      22
+	    }
+	    Line {
+	      ZOrder		      738
+	      SrcBlock		      "Jr"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      23
+	    }
+	    Line {
+	      ZOrder		      739
+	      SrcBlock		      "L"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      24
+	    }
+	    Line {
 	      Name		      "x_t1_t1"
-	      ZOrder		      187
+	      ZOrder		      740
 	      Labels		      [0, 0]
 	      SrcBlock		      " SFunction "
 	      SrcPort		      2
@@ -3903,7 +4172,7 @@ Model {
 	    }
 	    Line {
 	      Name		      "S_t1_t1"
-	      ZOrder		      188
+	      ZOrder		      741
 	      Labels		      [0, 0]
 	      SrcBlock		      " SFunction "
 	      SrcPort		      3
@@ -3911,14 +4180,23 @@ Model {
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      189
+	      Name		      "K"
+	      ZOrder		      742
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      4
+	      DstBlock		      "K"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      743
 	      SrcBlock		      " Demux "
 	      SrcPort		      1
 	      DstBlock		      " Terminator "
 	      DstPort		      1
 	    }
 	    Line {
-	      ZOrder		      190
+	      ZOrder		      744
 	      SrcBlock		      " SFunction "
 	      SrcPort		      1
 	      DstBlock		      " Demux "
@@ -3930,7 +4208,7 @@ Model {
 	  BlockType		  UnitDelay
 	  Name			  "Unit Delay"
 	  SID			  "405"
-	  Position		  [98, 170, 132, 205]
+	  Position		  [108, 270, 142, 305]
 	  ZOrder		  318
 	  BlockRotation		  270
 	  InitialCondition	  "S_0_0"
@@ -3941,7 +4219,7 @@ Model {
 	  BlockType		  UnitDelay
 	  Name			  "Unit Delay1"
 	  SID			  "406"
-	  Position		  [63, 40, 97, 75]
+	  Position		  [68, 35, 102, 70]
 	  ZOrder		  319
 	  BlockRotation		  270
 	  InitialCondition	  "x_0_0"
@@ -3952,68 +4230,65 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Out1"
 	  SID			  "397"
-	  Position		  [-20, 93, 10, 107]
+	  Position		  [-30, 133, 0, 147]
 	  ZOrder		  -2
 	  BlockMirror		  on
 	  NamePlacement		  "alternate"
 	  IconDisplay		  "Port number"
 	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out2"
+	  SID			  "548"
+	  Position		  [-30, 158, 0, 172]
+	  ZOrder		  324
+	  BlockMirror		  on
+	  NamePlacement		  "alternate"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
 	Line {
 	  ZOrder		  20
-	  SrcBlock		  "MATLAB Function"
+	  SrcBlock		  "Kalman Filter"
 	  SrcPort		  1
-	  Points		  [-75, 0]
+	  Points		  [0, -25; -70, 0]
 	  Branch {
-	    ZOrder		    31
-	    DstBlock		    "Out1"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    30
+	    ZOrder		    120
 	    DstBlock		    "Unit Delay1"
 	    DstPort		    1
 	  }
-	}
-	Line {
-	  ZOrder		  21
-	  SrcBlock		  "measurement"
-	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  1
-	}
-	Line {
-	  ZOrder		  22
-	  SrcBlock		  "input"
-	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  2
+	  Branch {
+	    ZOrder		    100
+	    DstBlock		    "Out1"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  23
 	  SrcBlock		  "Constant"
 	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  5
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  10
 	}
 	Line {
 	  ZOrder		  24
 	  SrcBlock		  "Constant1"
 	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  6
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  11
 	}
 	Line {
 	  ZOrder		  25
 	  SrcBlock		  "Constant2"
 	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  7
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  12
 	}
 	Line {
 	  ZOrder		  27
-	  SrcBlock		  "MATLAB Function"
+	  SrcBlock		  "Kalman Filter"
 	  SrcPort		  2
-	  Points		  [-40, 0]
+	  Points		  [-30, 0]
 	  DstBlock		  "Unit Delay"
 	  DstPort		  1
 	}
@@ -4021,45 +4296,172 @@ Model {
 	  ZOrder		  28
 	  SrcBlock		  "Unit Delay"
 	  SrcPort		  1
-	  Points		  [0, -148; 173, 0; 0, 98]
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  4
+	  Points		  [0, -255; 145, 0; 0, 75]
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  2
 	}
 	Line {
 	  ZOrder		  32
 	  SrcBlock		  "Unit Delay1"
 	  SrcPort		  1
-	  Points		  [0, -11; 218, 0; 0, 66]
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  3
+	  Points		  [0, -10; 192, 0; 0, 35]
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  33
 	  SrcBlock		  "Constant3"
 	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  8
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  13
 	}
 	Line {
 	  ZOrder		  34
 	  SrcBlock		  "Constant4"
 	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  9
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  14
 	}
 	Line {
 	  ZOrder		  35
 	  SrcBlock		  "Constant5"
 	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  10
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  15
 	}
 	Line {
 	  ZOrder		  36
 	  SrcBlock		  "Constant6"
 	  SrcPort		  1
-	  DstBlock		  "MATLAB Function"
-	  DstPort		  11
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  16
+	}
+	Line {
+	  ZOrder		  45
+	  SrcBlock		  "Kalman Filter"
+	  SrcPort		  3
+	  Points		  [-128, 0; 0, -470]
+	  DstBlock		  "Out2"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  55
+	  SrcBlock		  "measurement"
+	  SrcPort		  1
+	  Points		  [-50, 0; 0, -5]
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  113
+	  SrcBlock		  "Demux"
+	  SrcPort		  1
+	  Points		  [-2, 0; 0, -35]
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  5
+	}
+	Line {
+	  ZOrder		  114
+	  SrcBlock		  "Demux"
+	  SrcPort		  2
+	  Points		  [-10, 0; 0, -20]
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  6
+	}
+	Line {
+	  ZOrder		  115
+	  SrcBlock		  "Demux"
+	  SrcPort		  3
+	  Points		  [-15, 0; 0, -5]
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  7
+	}
+	Line {
+	  ZOrder		  116
+	  SrcBlock		  "Demux"
+	  SrcPort		  4
+	  Points		  [-30, 0]
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  8
+	}
+	Line {
+	  ZOrder		  117
+	  SrcBlock		  "Demux"
+	  SrcPort		  5
+	  Points		  [-6, 0; 0, 25]
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  9
+	}
+	Line {
+	  ZOrder		  109
+	  SrcBlock		  "input1"
+	  SrcPort		  1
+	  DstBlock		  "Demux"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  111
+	  SrcBlock		  "input"
+	  SrcPort		  1
+	  Points		  [-50, 0; 0, -15]
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  4
+	}
+	Line {
+	  ZOrder		  112
+	  SrcBlock		  "Constant7"
+	  SrcPort		  1
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  17
+	}
+	Line {
+	  ZOrder		  121
+	  SrcBlock		  "Constant8"
+	  SrcPort		  1
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  18
+	}
+	Line {
+	  ZOrder		  122
+	  SrcBlock		  "Constant9"
+	  SrcPort		  1
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  19
+	}
+	Line {
+	  ZOrder		  123
+	  SrcBlock		  "Constant10"
+	  SrcPort		  1
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  21
+	}
+	Line {
+	  ZOrder		  124
+	  SrcBlock		  "Constant11"
+	  SrcPort		  1
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  20
+	}
+	Line {
+	  ZOrder		  125
+	  SrcBlock		  "Constant12"
+	  SrcPort		  1
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  22
+	}
+	Line {
+	  ZOrder		  126
+	  SrcBlock		  "Constant14"
+	  SrcPort		  1
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  24
+	}
+	Line {
+	  ZOrder		  127
+	  SrcBlock		  "Constant13"
+	  SrcPort		  1
+	  DstBlock		  "Kalman Filter"
+	  DstPort		  23
 	}
       }
     }
@@ -4068,7 +4470,7 @@ Model {
       Name		      "Matrix Multiply"
       SID		      "280"
       Ports		      [2, 1]
-      Position		      [190, 259, 245, 301]
+      Position		      [195, 284, 245, 326]
       ZOrder		      17
       NamePlacement	      "alternate"
       Multiplication	      "Matrix(*)"
@@ -4082,7 +4484,7 @@ Model {
       Name		      "Mux"
       SID		      "252"
       Ports		      [16, 1]
-      Position		      [630, 199, 640, 521]
+      Position		      [640, 206, 645, 499]
       ZOrder		      1
       ShowName		      off
       Inputs		      "16"
@@ -4106,7 +4508,7 @@ Model {
       Name		      "Reshape"
       SID		      "274"
       Ports		      [1, 1]
-      Position		      [120, 255, 150, 285]
+      Position		      [120, 280, 150, 310]
       ZOrder		      11
       OutputDimensionality    "Customize"
       OutputDimensions	      "[4,16]"
@@ -4181,7 +4583,7 @@ Model {
       Name		      "To Workspace"
       SID		      "255"
       Ports		      [1]
-      Position		      [800, 345, 860, 375]
+      Position		      [920, 340, 980, 370]
       ZOrder		      4
       VariableName	      "state"
       MaxDataPoints	      "inf"
@@ -4195,12 +4597,28 @@ Model {
       Name		      "To Workspace1"
       SID		      "546"
       Ports		      [1]
-      Position		      [220, 635, 280, 665]
+      Position		      [180, 590, 240, 620]
       ZOrder		      308
       BlockMirror	      on
       NamePlacement	      "alternate"
-      Commented		      "on"
       VariableName	      "estimate"
+      MaxDataPoints	      "inf"
+      SaveFormat	      "Timeseries"
+      Save2DSignal	      "3-D array (concatenate along third dimension)"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      SID		      "549"
+      Ports		      [1]
+      Position		      [180, 645, 240, 675]
+      ZOrder		      309
+      BlockMirror	      on
+      NamePlacement	      "alternate"
+      Commented		      "on"
+      VariableName	      "K_gain"
       MaxDataPoints	      "inf"
       SaveFormat	      "Timeseries"
       Save2DSignal	      "3-D array (concatenate along third dimension)"
@@ -4211,15 +4629,15 @@ Model {
       BlockType		      SubSystem
       Name		      "quadmodel"
       SID		      "1"
-      Ports		      [4, 16]
+      Ports		      [4, 17]
       Position		      [515, 202, 605, 518]
       ZOrder		      -1
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
       System {
 	Name			"quadmodel"
-	Location		[-7, 0, 967, 1047]
-	Open			on
+	Location		[-8, -8, 1928, 1048]
+	Open			off
 	PortBlocksUseCompactNotation off
 	SetDomainSpec		off
 	DomainSpecType		"Deduce"
@@ -4233,12 +4651,12 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"117"
+	ZoomFactor		"125"
 	Block {
 	  BlockType		  Inport
 	  Name			  "V1"
 	  SID			  "2"
-	  Position		  [-5, 98, 25, 112]
+	  Position		  [-85, 98, -55, 112]
 	  ZOrder		  -1
 	  IconDisplay		  "Port number"
 	}
@@ -4246,7 +4664,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "V2"
 	  SID			  "3"
-	  Position		  [-5, 258, 25, 272]
+	  Position		  [-85, 258, -55, 272]
 	  ZOrder		  -2
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -4255,7 +4673,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "V3"
 	  SID			  "4"
-	  Position		  [-5, 418, 25, 432]
+	  Position		  [-85, 418, -55, 432]
 	  ZOrder		  -3
 	  Port			  "3"
 	  IconDisplay		  "Port number"
@@ -4264,7 +4682,7 @@ Model {
 	  BlockType		  Inport
 	  Name			  "V4"
 	  SID			  "5"
-	  Position		  [-5, 578, 25, 592]
+	  Position		  [-85, 578, -55, 592]
 	  ZOrder		  -4
 	  Port			  "4"
 	  IconDisplay		  "Port number"
@@ -6873,12 +7291,12 @@ Model {
 	  Name			  "Motor dynamics"
 	  SID			  "130"
 	  Ports			  [4, 9]
-	  Position		  [85, 26, 150, 664]
+	  Position		  [-10, 26, 55, 664]
 	  ZOrder		  -6
 	  RequestExecContextInheritance	off
 	  System {
 	    Name		    "Motor dynamics"
-	    Location		    [-7, 0, 967, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    on
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -6893,7 +7311,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "125"
+	    ZoomFactor		    "150"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "V1"
@@ -6981,7 +7399,7 @@ Model {
 	      RequestExecContextInheritance off
 	      System {
 		Name			"Motor/Rotor1"
-		Location		[-7, 0, 967, 1047]
+		Location		[953, 0, 1927, 1047]
 		Open			off
 		PortBlocksUseCompactNotation off
 		SetDomainSpec		off
@@ -6996,7 +7414,7 @@ Model {
 		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
-		ZoomFactor		"125"
+		ZoomFactor		"150"
 		Block {
 		  BlockType		  Inport
 		  Name			  "Volts In"
@@ -8676,6 +9094,17 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "560"
+	  Ports			  [5, 1]
+	  Position		  [550, 443, 555, 537]
+	  ZOrder		  12
+	  ShowName		  off
+	  Inputs		  "5"
+	  DisplayOption		  "bar"
+	}
+	Block {
 	  BlockType		  Outport
 	  Name			  "X"
 	  SID			  "229"
@@ -8786,7 +9215,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "R1"
 	  SID			  "266"
-	  Position		  [230, 408, 260, 422]
+	  Position		  [115, 408, 145, 422]
 	  ZOrder		  7
 	  Port			  "13"
 	  IconDisplay		  "Port number"
@@ -8795,7 +9224,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "R2"
 	  SID			  "267"
-	  Position		  [230, 478, 260, 492]
+	  Position		  [115, 478, 145, 492]
 	  ZOrder		  8
 	  Port			  "14"
 	  IconDisplay		  "Port number"
@@ -8804,7 +9233,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "R3"
 	  SID			  "268"
-	  Position		  [225, 548, 255, 562]
+	  Position		  [110, 548, 140, 562]
 	  ZOrder		  9
 	  Port			  "15"
 	  IconDisplay		  "Port number"
@@ -8813,45 +9242,104 @@ Model {
 	  BlockType		  Outport
 	  Name			  "R4"
 	  SID			  "269"
-	  Position		  [225, 618, 255, 632]
+	  Position		  [110, 618, 140, 632]
 	  ZOrder		  10
 	  Port			  "16"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Uvals"
+	  SID			  "559"
+	  Position		  [685, 483, 715, 497]
+	  ZOrder		  11
+	  Port			  "17"
 	  IconDisplay		  "Port number"
 	}
 	Line {
 	  ZOrder		  1
 	  SrcBlock		  "Motor dynamics"
 	  SrcPort		  1
-	  DstBlock		  "Body dynamics"
-	  DstPort		  1
+	  Points		  [159, 0]
+	  Branch {
+	    ZOrder		    48
+	    DstBlock		    "Body dynamics"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    28
+	    Points		    [0, 385]
+	    DstBlock		    "Mux"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  2
 	  SrcBlock		  "Motor dynamics"
 	  SrcPort		  2
-	  DstBlock		  "Body dynamics"
-	  DstPort		  2
+	  Points		  [148, 0]
+	  Branch {
+	    ZOrder		    47
+	    DstBlock		    "Body dynamics"
+	    DstPort		    2
+	  }
+	  Branch {
+	    ZOrder		    33
+	    Points		    [0, 335]
+	    DstBlock		    "Mux"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  ZOrder		  3
 	  SrcBlock		  "Motor dynamics"
 	  SrcPort		  3
-	  DstBlock		  "Body dynamics"
-	  DstPort		  3
+	  Points		  [137, 0]
+	  Branch {
+	    ZOrder		    46
+	    DstBlock		    "Body dynamics"
+	    DstPort		    3
+	  }
+	  Branch {
+	    ZOrder		    32
+	    Points		    [0, 285]
+	    DstBlock		    "Mux"
+	    DstPort		    3
+	  }
 	}
 	Line {
 	  ZOrder		  4
 	  SrcBlock		  "Motor dynamics"
 	  SrcPort		  4
-	  DstBlock		  "Body dynamics"
-	  DstPort		  4
+	  Points		  [121, 0]
+	  Branch {
+	    ZOrder		    43
+	    DstBlock		    "Body dynamics"
+	    DstPort		    4
+	  }
+	  Branch {
+	    ZOrder		    35
+	    Points		    [0, 235]
+	    DstBlock		    "Mux"
+	    DstPort		    4
+	  }
 	}
 	Line {
 	  ZOrder		  5
 	  SrcBlock		  "Motor dynamics"
 	  SrcPort		  5
-	  DstBlock		  "Body dynamics"
-	  DstPort		  5
+	  Points		  [110, 0]
+	  Branch {
+	    ZOrder		    42
+	    DstBlock		    "Body dynamics"
+	    DstPort		    5
+	  }
+	  Branch {
+	    ZOrder		    41
+	    Points		    [0, 185]
+	    DstBlock		    "Mux"
+	    DstPort		    5
+	  }
 	}
 	Line {
 	  ZOrder		  6
@@ -8993,6 +9481,13 @@ Model {
 	  DstBlock		  "R4"
 	  DstPort		  1
 	}
+	Line {
+	  ZOrder		  26
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "Uvals"
+	  DstPort		  1
+	}
       }
     }
     Block {
@@ -9000,16 +9495,13 @@ Model {
       Name		      "v: obs noise"
       SID		      "364"
       Ports		      [1, 1]
-      Position		      [733, 455, 777, 530]
+      Position		      [720, 333, 795, 377]
       ZOrder		      300
-      BlockRotation	      270
-      BlockMirror	      on
-      NamePlacement	      "alternate"
       RequestExecContextInheritance off
       ContentPreviewEnabled   on
       System {
 	Name			"v: obs noise"
-	Location		[-7, 0, 967, 1047]
+	Location		[-8, -8, 1928, 1048]
 	Open			on
 	PortBlocksUseCompactNotation off
 	SetDomainSpec		off
@@ -9024,7 +9516,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"175"
 	Block {
 	  BlockType		  Inport
 	  Name			  "In1"
@@ -9066,7 +9558,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Subsystem"
-	    Location		    [100, 100, 900, 600]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -9109,7 +9601,7 @@ Model {
 	      Position		      [35, 65, 65, 95]
 	      ZOrder		      294
 	      Variance		      "0.0001"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -9153,7 +9645,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Subsystem1"
-	    Location		    [100, 100, 900, 600]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -9196,7 +9688,7 @@ Model {
 	      Position		      [35, 65, 65, 95]
 	      ZOrder		      294
 	      Variance		      "0.0001"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -9240,7 +9732,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Subsystem2"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    on
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -9283,7 +9775,7 @@ Model {
 	      Position		      [35, 65, 65, 95]
 	      ZOrder		      294
 	      Variance		      "0.0001"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -9327,7 +9819,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Subsystem3"
-	    Location		    [100, 100, 900, 600]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -9370,7 +9862,7 @@ Model {
 	      Position		      [35, 65, 65, 95]
 	      ZOrder		      294
 	      Variance		      "0.0001"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -9640,7 +10132,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -9683,7 +10175,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -9729,7 +10221,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box1"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -9772,7 +10264,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -9818,7 +10310,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box10"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -9861,7 +10353,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -9907,7 +10399,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box11"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -9950,7 +10442,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -9996,7 +10488,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box2"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -10039,7 +10531,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -10085,7 +10577,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box3"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -10128,7 +10620,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -10174,7 +10666,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box4"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -10217,7 +10709,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -10263,7 +10755,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box5"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -10306,7 +10798,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -10352,7 +10844,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box6"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -10395,7 +10887,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -10441,7 +10933,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box7"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -10484,7 +10976,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -10530,7 +11022,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box8"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -10573,7 +11065,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -10619,7 +11111,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "noise_0.01_box9"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -10662,7 +11154,7 @@ Model {
 	      Position		      [170, 200, 200, 230]
 	      ZOrder		      294
 	      Variance		      "0.01"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11077,6 +11569,7 @@ Model {
 	  InternalMargins	  [0, 0, 0, 0]
 	  HorizontalAlignment	  "left"
 	  VerticalAlignment	  "top"
+	  ZOrder		  -1
 	}
       }
     }
@@ -11091,8 +11584,8 @@ Model {
       ContentPreviewEnabled   on
       System {
 	Name			"w: Process noise"
-	Location		[953, 0, 1927, 1047]
-	Open			off
+	Location		[-8, -8, 1928, 1048]
+	Open			on
 	PortBlocksUseCompactNotation off
 	SetDomainSpec		off
 	DomainSpecType		"Deduce"
@@ -11147,7 +11640,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Subsystem"
-	    Location		    [100, 100, 900, 600]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -11190,7 +11683,7 @@ Model {
 	      Position		      [20, 60, 50, 90]
 	      ZOrder		      288
 	      Variance		      "0.05"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11237,7 +11730,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Subsystem1"
-	    Location		    [100, 100, 900, 600]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -11280,7 +11773,7 @@ Model {
 	      Position		      [20, 60, 50, 90]
 	      ZOrder		      288
 	      Variance		      "0.05"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11327,7 +11820,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Subsystem2"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -11370,7 +11863,7 @@ Model {
 	      Position		      [20, 60, 50, 90]
 	      ZOrder		      288
 	      Variance		      "0.05"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11417,7 +11910,7 @@ Model {
 	  ContentPreviewEnabled	  on
 	  System {
 	    Name		    "Subsystem3"
-	    Location		    [953, 0, 1927, 1047]
+	    Location		    [-8, -8, 1928, 1048]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    SetDomainSpec	    off
@@ -11432,7 +11925,7 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "175"
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant2"
@@ -11460,7 +11953,7 @@ Model {
 	      Position		      [20, 60, 50, 90]
 	      ZOrder		      288
 	      Variance		      "0.05"
-	      SampleTime	      "0.1"
+	      SampleTime	      "dt"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -11828,7 +12321,7 @@ Model {
       Points		      [0, 0]
       Branch {
 	ZOrder			58
-	Points			[0, -70]
+	Points			[0, -45]
 	DstBlock		"Matrix Multiply"
 	DstPort			2
       }
@@ -11850,7 +12343,7 @@ Model {
       ZOrder		      61
       SrcBlock		      "Gain"
       SrcPort		      1
-      Points		      [4, 0]
+      Points		      [10, 0; 0, 12]
       DstBlock		      "Sum1"
       DstPort		      2
     }
@@ -11886,42 +12379,42 @@ Model {
       ZOrder		      20
       SrcBlock		      "Mux"
       SrcPort		      1
-      Points		      [110, 0]
-      Branch {
-	ZOrder			116
-	DstBlock		"v: obs noise"
-	DstPort			1
-      }
-      Branch {
-	ZOrder			81
-	DstBlock		"To Workspace"
-	DstPort			1
-      }
+      DstBlock		      "v: obs noise"
+      DstPort		      1
     }
     Line {
       ZOrder		      105
       SrcBlock		      "Sum1"
       SrcPort		      1
-      Points		      [17, 0]
+      Points		      [25, 0]
       Branch {
-	ZOrder			209
-	Points			[0, 300; 148, 0; 0, 55]
-	DstBlock		"Kalman Filter"
-	DstPort			1
+	ZOrder			255
+	Points			[0, 203; 266, 0; 0, 82]
+	DstBlock		"KalmanFilter"
+	DstPort			2
       }
       Branch {
-	ZOrder			199
+	ZOrder			254
 	DstBlock		"w: Process noise"
 	DstPort			1
       }
     }
     Line {
-      ZOrder		      210
+      ZOrder		      213
       SrcBlock		      "v: obs noise"
       SrcPort		      1
-      Points		      [0, 210]
-      DstBlock		      "Kalman Filter"
-      DstPort		      2
+      Points		      [29, 0]
+      Branch {
+	ZOrder			263
+	Points			[0, 270]
+	DstBlock		"KalmanFilter"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			262
+	DstBlock		"To Workspace"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      197
@@ -11931,20 +12424,37 @@ Model {
       DstPort		      1
     }
     Line {
-      ZOrder		      206
+      ZOrder		      226
       SrcBlock		      "KalmanFilter"
-      SrcPort		      1
-      Points		      [-61, 0; 0, 55]
-      DstBlock		      "To Workspace1"
+      SrcPort		      2
+      DstBlock		      "To Workspace2"
       DstPort		      1
     }
     Line {
-      ZOrder		      211
-      SrcBlock		      "Kalman Filter"
+      ZOrder		      248
+      SrcBlock		      "KalmanFilter"
       SrcPort		      1
-      Points		      [-245, 0]
-      DstBlock		      "Sum"
-      DstPort		      2
+      Points		      [-155, 0]
+      Branch {
+	ZOrder			264
+	Points			[0, -30]
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+      Branch {
+	ZOrder			249
+	Points			[-140, 0]
+	DstBlock		"Sum"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      256
+      SrcBlock		      "quadmodel"
+      SrcPort		      17
+      Points		      [9, 0; 0, 185]
+      DstBlock		      "KalmanFilter"
+      DstPort		      3
     }
   }
 }
@@ -11960,12 +12470,12 @@ Stateflow {
     created		    "24-May-2010 15:40:45"
     isLibrary		    0
     sfVersion		    80000014
-    firstTarget		    20
+    firstTarget		    34
   }
   chart {
     id			    2
     machine		    1
-    name		    "KalmanFilter/MATLAB Function"
+    name		    "KalmanFilter/Kalman Filter"
     windowPosition	    [422 539.941 189 413]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 3600 1200 1.180555555555556]
@@ -11974,7 +12484,7 @@ Stateflow {
     visible		    1
     subviewS {
     }
-    ssIdHighWaterMark	    17
+    ssIdHighWaterMark	    32
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
     chartFileNumber	    2
@@ -11983,8 +12493,8 @@ Stateflow {
       name		      "fcn"
     }
     firstData		    4
-    firstTransition	    18
-    firstJunction	    17
+    firstTransition	    32
+    firstJunction	    31
   }
   state {
     id			    3
@@ -12000,17 +12510,30 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function [x_t1_t1,S_t1_t1] = fcn(y_t1,u_t,x_t_t,S_t_t,A,B,C,G,H,Sv,Sw)\n%% This is a linear kalma"
-      "n filter! woooooo\n% my boi kalman killin the game\n    x_t1_t1 = zeros(16,1);\n    S_t1_t1 = zeros(16,16);\n\n "
-      "   x_t1_t = A*x_t_t + B*u_t;\n    S_t1_t = (A*S_t_t*A.') + (G*Sw*G.');\n    K = S_t1_t*C.'/((C*S_t1_t*C.')+(H*Sv"
-      "*H.'));\n    x_t1_t1 = x_t1_t + (K*(y_t1 - C*x_t1_t));\n    S_t1_t1 = S_t1_t - K*C*S_t1_t.';\n    \n    \n"
+      script		      "function [x_t1_t1,S_t1_t1,K] = fcn(x_t_t,S_t_t,y_t1,u_t,U1,U2,U3, ...\n    U4,Omega,A,B,C,G,H,Sv,"
+      "Sw,dt,ga,m,Ixx,Iyy,Izz,Jr,L)\n%% This is a linear kalman filter! woooooo\n    x_t1_t1 = zeros(16,1);\n    S_t1_t"
+      "1 = zeros(16,16);\n    K = zeros(16,16);\n    I = eye(16);\n    x_t1_t = zeros(16,1);\n    \n    %nonlinear dyna"
+      "mics, linear for the rotor speed stuff\n    x_t1_t(1) = x_t_t(2);\n    x_t1_t(2) = (U1/m)*(cos(x_t_t(7))*sin(x_t"
+      "_t(9))*cos(x_t_t(11)) ...\n        + sin(x_t_t(7))*sin(x_t_t(11)));\n    x_t1_t(3) = x_t_t(4);\n    x_t1_t(4) = "
+      "(U1/m)*(cos(x_t_t(7))*sin(x_t_t(9))*sin(x_t_t(11)) ...\n        - sin(x_t_t(7))*cos(x_t_t(11)));\n    x_t1_t(5) "
+      "= x_t_t(6);\n    x_t1_t(6) = -ga + (cos(x_t_t(7))*cos(x_t_t(9))*(U1/m));\n    x_t1_t(7) = x_t_t(8);\n    x_t1_t("
+      "8) = (x_t_t(12)*x_t_t(10)*((Iyy-Izz)/Ixx)) ...\n        - (Jr/Ixx)*x_t_t(10)*Omega + (L/Ixx)*U2;\n    x_t1_t(9) "
+      "= x_t_t(10);\n    x_t1_t(10) = (x_t_t(12)*x_t_t(8)*((Izz-Ixx)/Iyy)) ... \n        - (Jr/Iyy)*x_t_t(8)*Omega + (L"
+      "/Iyy)*U3;\n    x_t1_t(11) = x_t_t(12);\n    x_t1_t(12) = (x_t_t(10)*x_t_t(8)*((Ixx-Iyy)/Izz)) - (L/Izz)*U4;\n   "
+      " x_t1_t(13:16) = A(13:16,13:16)*x_t_t(13:16) + B(13:16,:)*u_t;\n    \n    % prediction step\n    x_t1_t= x_t1_t*"
+      "dt + x_t_t;\n\n    S_t1_t = (A*S_t_t*A.') + (G*Sw*G.');\n    K = S_t1_t*((C.')*pinv((C*S_t1_t*C.')+(H*Sv*H.')));"
+      "\n    x_t1_t1 = x_t1_t + (K*(y_t1 - C*x_t1_t));\n    S_t1_t1 = S_t1_t - K*C*(S_t1_t);   \n    \n    \n    % pred"
+      "ict\n%     x_t1_t = (A*x_t_t + B*u_t)*dt + x_t_t;\n%     S_t1_t = (A*S_t_t*A.') + Sw;\n%     %update\n%     y = "
+      "y_t1 - C*x_t1_t;\n%     S = Sv + C*S_t1_t*C.';\n%     K = S_t1_t*(C.')*(pinv(S));\n%     x_t1_t1 = x_t1_t + K*y;"
+      "\n%     S_t1_t1 = (I-K*C)*S_t1_t*((I-K*C).') + K*Sv*K.';\n% deprecated\n%     x_t1_t = A*x_t_t + B*u_t;\n     \n"
+      "\nend\n"
       editorLayout	      "100 M4x1[10 5 700 500]"
     }
   }
   data {
     id			    4
-    ssIdNumber		    9
-    name		    "y_t1"
+    ssIdNumber		    10
+    name		    "x_t_t"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12034,8 +12557,8 @@ Stateflow {
   }
   data {
     id			    5
-    ssIdNumber		    12
-    name		    "u_t"
+    ssIdNumber		    11
+    name		    "S_t_t"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12059,8 +12582,8 @@ Stateflow {
   }
   data {
     id			    6
-    ssIdNumber		    10
-    name		    "x_t_t"
+    ssIdNumber		    9
+    name		    "y_t1"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12084,8 +12607,8 @@ Stateflow {
   }
   data {
     id			    7
-    ssIdNumber		    11
-    name		    "S_t_t"
+    ssIdNumber		    19
+    name		    "u_t"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12109,8 +12632,8 @@ Stateflow {
   }
   data {
     id			    8
-    ssIdNumber		    4
-    name		    "A"
+    ssIdNumber		    21
+    name		    "U1"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12120,8 +12643,11 @@ Stateflow {
       type {
 	method			SF_INHERITED_TYPE
 	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
       }
       complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
       unit {
 	name			"inherit"
       }
@@ -12131,9 +12657,9 @@ Stateflow {
   }
   data {
     id			    9
-    ssIdNumber		    5
-    name		    "x_t1_t1"
-    scope		    OUTPUT_DATA
+    ssIdNumber		    22
+    name		    "U2"
+    scope		    INPUT_DATA
     machine		    1
     props {
       array {
@@ -12142,9 +12668,11 @@ Stateflow {
       type {
 	method			SF_INHERITED_TYPE
 	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
       }
       complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_NO
+      frame		      SF_FRAME_INHERITED
       unit {
 	name			"inherit"
       }
@@ -12154,8 +12682,8 @@ Stateflow {
   }
   data {
     id			    10
-    ssIdNumber		    6
-    name		    "B"
+    ssIdNumber		    23
+    name		    "U3"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12179,8 +12707,8 @@ Stateflow {
   }
   data {
     id			    11
-    ssIdNumber		    7
-    name		    "C"
+    ssIdNumber		    24
+    name		    "U4"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12204,8 +12732,8 @@ Stateflow {
   }
   data {
     id			    12
-    ssIdNumber		    13
-    name		    "G"
+    ssIdNumber		    25
+    name		    "Omega"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12229,8 +12757,8 @@ Stateflow {
   }
   data {
     id			    13
-    ssIdNumber		    14
-    name		    "H"
+    ssIdNumber		    4
+    name		    "A"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12240,11 +12768,8 @@ Stateflow {
       type {
 	method			SF_INHERITED_TYPE
 	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
       }
       complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
       unit {
 	name			"inherit"
       }
@@ -12254,9 +12779,9 @@ Stateflow {
   }
   data {
     id			    14
-    ssIdNumber		    15
-    name		    "Sv"
-    scope		    INPUT_DATA
+    ssIdNumber		    5
+    name		    "x_t1_t1"
+    scope		    OUTPUT_DATA
     machine		    1
     props {
       array {
@@ -12265,11 +12790,9 @@ Stateflow {
       type {
 	method			SF_INHERITED_TYPE
 	primitive		SF_DOUBLE_TYPE
-	isSigned		1
-	wordLength		"16"
       }
       complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_INHERITED
+      frame		      SF_FRAME_NO
       unit {
 	name			"inherit"
       }
@@ -12279,8 +12802,8 @@ Stateflow {
   }
   data {
     id			    15
-    ssIdNumber		    16
-    name		    "Sw"
+    ssIdNumber		    6
+    name		    "B"
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -12304,6 +12827,131 @@ Stateflow {
   }
   data {
     id			    16
+    ssIdNumber		    7
+    name		    "C"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 15 17]
+  }
+  data {
+    id			    17
+    ssIdNumber		    13
+    name		    "G"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 16 18]
+  }
+  data {
+    id			    18
+    ssIdNumber		    14
+    name		    "H"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 17 19]
+  }
+  data {
+    id			    19
+    ssIdNumber		    15
+    name		    "Sv"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 18 20]
+  }
+  data {
+    id			    20
+    ssIdNumber		    16
+    name		    "Sw"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 19 21]
+  }
+  data {
+    id			    21
     ssIdNumber		    17
     name		    "S_t1_t1"
     scope		    OUTPUT_DATA
@@ -12325,10 +12973,235 @@ Stateflow {
       }
     }
     dataType		    "Inherit: Same as Simulink"
-    linkNode		    [2 15 0]
+    linkNode		    [2 20 22]
+  }
+  data {
+    id			    22
+    ssIdNumber		    18
+    name		    "K"
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 21 23]
+  }
+  data {
+    id			    23
+    ssIdNumber		    20
+    name		    "dt"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 22 24]
+  }
+  data {
+    id			    24
+    ssIdNumber		    26
+    name		    "ga"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 23 25]
+  }
+  data {
+    id			    25
+    ssIdNumber		    27
+    name		    "m"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 24 26]
+  }
+  data {
+    id			    26
+    ssIdNumber		    28
+    name		    "Ixx"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 25 27]
+  }
+  data {
+    id			    27
+    ssIdNumber		    29
+    name		    "Iyy"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 26 28]
+  }
+  data {
+    id			    28
+    ssIdNumber		    30
+    name		    "Izz"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 27 29]
+  }
+  data {
+    id			    29
+    ssIdNumber		    31
+    name		    "Jr"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 28 30]
+  }
+  data {
+    id			    30
+    ssIdNumber		    32
+    name		    "L"
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+      unit {
+	name			"inherit"
+      }
+    }
+    dataType		    "Inherit: Same as Simulink"
+    linkNode		    [2 29 0]
   }
   junction {
-    id			    17
+    id			    31
     position		    [23.5747 49.5747 7]
     chart		    2
     subviewer		    2
@@ -12337,7 +13210,7 @@ Stateflow {
     linkNode		    [2 0 0]
   }
   transition {
-    id			    18
+    id			    32
     labelString		    "{eML_blk_kernel();}"
     labelPosition	    [28.125 13.875 102.544 14.964]
     fontSize		    12
@@ -12345,7 +13218,7 @@ Stateflow {
       intersection	      [0 0 1 0 23.5747 14.625 0 0]
     }
     dst {
-      id		      17
+      id		      31
       intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
     }
     midPoint		    [23.5747 24.9468]
@@ -12361,13 +13234,13 @@ Stateflow {
     linkNode		    [2 0 0]
   }
   instance {
-    id			    19
+    id			    33
     machine		    1
-    name		    "KalmanFilter/MATLAB Function"
+    name		    "KalmanFilter/Kalman Filter"
     chart		    2
   }
   target {
-    id			    20
+    id			    34
     machine		    1
     name		    "sfun"
     codeFlags		    ""
