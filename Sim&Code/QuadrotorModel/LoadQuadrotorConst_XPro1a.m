@@ -19,10 +19,6 @@ Izz = 3.7479*100;       % Psi (z-axis) Inertia (kgm^2)
 % Iyy = Ixx;              % Theta (y-axis) Inertia (kgm^2)
 % Izz = 8.801E-3;         % Psi (z-axis) Inertia (kgm^2)
 
-
-
-
-
 Tau = 0.1;              % Motor/Rotor time const (s)
 % Rotor Speed -to- Lift & Drag Functions:
 % Lift (N) = c*(r/s)^2+d*(r/s)+e

@@ -8,7 +8,7 @@ r_0 = [0 0 30].';
 r_T = [30 30 30].';
 v_0 = [0 0 0].';
 v_T = v_0;
-g = 9.81;
+g = [0 0 -9.81]'ff;
 % timing shit
 t_f = 100;			% final time horizon (not necessarily optimal)
 dt = 1;           	% period of calculation
@@ -29,8 +29,8 @@ cvx_begin
 		v(:,N) == v_T;		
 
 		for  k = 1:N-1
-			r(:,k+1) == r(:,k) + ((dt/2)*(v(:,k) + v(:,k+1))) +(((dt^2)/12)*(u(:,k+1) - u(:,k)));
-			v(:,k+1) == v(:,k) + ((dt/2)*(u(:,k) + u(:,k+1))) +(g_plan*dt);
+			r(:,k+1) == r(:,k) + ((dt/2)*(v(:,k) + v(:,k+1))) + (((dt^2)/12)*(u(:,k+1) - u(:,k)));
+			v(:,k+1) == v(:,k) + ((dt/2)*(u(:,k) + u(:,k+1))) + (g*dt);
 			z(1,k+1) == z(1,k) - (((a*dt)/2)*(s(1,k) + s(1,k+1)));
 		end
 

@@ -10,11 +10,9 @@ Cc = LinearAnalysisToolProject.LocalVariables(2).Value.C;
 D = LinearAnalysisToolProject.LocalVariables(2).Value.D;
 
 
-
 %% GENERATE THE FEEDBACK GAIN MATRIX
 tic
-bigval = 10^3;
-bigrval = 10^4;
+bigval = 10^3; bigrval = 10^4;
 Q = 100*Cc.'*Cc; 
 Q(1,1) = 1000*bigrval;
 Q(3,3) = 1000*bigrval;
@@ -31,7 +29,7 @@ P(3,3) = bigval^2;
 P(5,5) = bigrval^2;
 P(11,11)=bigrval^2;
 dt = 0.01;
-tT = 200;
+tT = 50;
 tspan = tT:-dt:0;
 finalS = reshape(P,[16^2,1]);
 [t,S] = ode45(@(t,S) rhs(t,S,A,B,R,Q), tspan, finalS);
@@ -50,7 +48,7 @@ K = C(1:4,:);
 toc
 
 %% initialize Kalman Filter and covariances
-S_0_0 = 10^7*eye(16);
+S_0_0 = 0.001*eye(16);
 G = eye(16);
 H = eye(16);
 Sv= 0.01*eye(16);
@@ -66,9 +64,9 @@ Sw = Sv;
 stateref = [35 0 35 0 50 0 0 0 0 0 0 0 0 0 0 0]';
 zrt = zeros(length(tspan),1);
 zrt2 = zeros(length(tspan),11);
-xtrain = x_0 + 0.5*sin(8*pi*(flipud(tspan')/tT));
-ytrain = y_0 + 0.5*cos(8*pi*(flipud(tspan')/tT));
-ztrain = z_0 + 0.5*(flipud(tspan')/tT);
+xtrain = x_0 + 1*sin((tT/20)*2*pi*(flipud(tspan')/tT));
+ytrain = y_0 + 1*cos((tT/20)*2*pi*(flipud(tspan')/tT));
+ztrain = z_0 + 1*(flipud(tspan')/tT);
 trajectory = [flipud(tspan') [xtrain zrt ytrain zrt ztrain zrt2] ];
 
 
@@ -81,20 +79,20 @@ toc
 
 %% plotski
 
-figure;
-curve = animatedline('LineWidth',1);
-set(gca,'XLim',[-1 1], 'YLim',[-1 1],'Zlim',[28 32]);
-view(285,25);
-tint = 100;
-hold on;
-grid on
-for i=1:length(state.Data(:,1))/tint
-	addpoints(curve, state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5));
-	head = scatter3(state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5), 'filled','MarkerFaceColor','b','MarkerEdgeColor','b');
-	drawnow; hold on;
-	delete(head);
-end
-hold off;
+% figure;
+% curve = animatedline('LineWidth',1);
+% set(gca,'XLim',[-1 1], 'YLim',[-1 1],'Zlim',[28 32]);
+% view(285,25);
+% tint = 100;
+% hold on;
+% grid on
+% for i=1:length(state.Data(:,1))/tint
+% 	addpoints(curve, state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5));
+% 	head = scatter3(state.Data(i*tint,1), state.Data(i*tint,3), state.Data(i*tint,5), 'filled','MarkerFaceColor','b','MarkerEdgeColor','b');
+% 	drawnow; hold on;
+% 	delete(head);
+% end
+% hold off;
 
 % plot the trajectory
 figure;
@@ -115,31 +113,25 @@ zlabel('Z distance (m)'); hold off;
 
 %STATES
 figure; subplot(6,1,1)
-plot(state.Time, state.Data(:,1)); title('x vs time')
-subplot(6,1,2)
-plot(state.Time, state.Data(:,3)); title('y vs time')
-subplot(6,1,3)
-plot(state.Time, state.Data(:,5)); title('z vs  time')
-subplot(6,1,4)
-plot(state.Time, state.Data(:,7)); title('Phi vs time')
-subplot(6,1,5)
-plot(state.Time, state.Data(:,9)); title('Theta vs time')
-subplot(6,1,6)
-plot(state.Time, state.Data(:,11)); title('Psi vs time')
-
-%STATES
-figure; subplot(6,1,1)
+plot(state.Time, state.Data(:,1)); title('x vs time'); hold on;
 plot(estimate.Time, estimate.Data(:,1)); title('x_est vs time')
 subplot(6,1,2)
+plot(state.Time, state.Data(:,3)); title('y vs time'); hold on;
 plot(estimate.Time, estimate.Data(:,3)); title('y_est vs time')
 subplot(6,1,3)
+plot(state.Time, state.Data(:,5)); title('z vs  time'); hold on;
 plot(estimate.Time, estimate.Data(:,5)); title('z_est vs  time')
 subplot(6,1,4)
+plot(state.Time, state.Data(:,7)); title('Phi vs time'); hold on;
 plot(estimate.Time, estimate.Data(:,7)); title('Phi_est vs time')
 subplot(6,1,5)
+plot(state.Time, state.Data(:,9)); title('Theta vs time'); hold on;
 plot(estimate.Time, estimate.Data(:,9)); title('Theta_est vs time')
 subplot(6,1,6)
+plot(state.Time, state.Data(:,11)); title('Psi vs time'); hold on;
 plot(estimate.Time, estimate.Data(:,11)); title('Psi_est vs time')
+hold off;
+legend('State Observation','State Estimation')
 
 % print off the final value
 finalstate = [state.Data(end,1) state.Data(end,3) state.Data(end,5)]
