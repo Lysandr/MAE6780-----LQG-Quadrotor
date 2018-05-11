@@ -1,0 +1,39 @@
+\begin{thebibliography}{5}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Acikmese and Ploen(2007)}]{ploen2007}
+Acikmese, B., and Ploen, S., \enquote{Convex Programming Approach to Powered
+  Descent Guidance for Mars Landing,} \emph{AIAA Journal of Guidance, Control,
+  and Dynamics}, Vol.~30, No.~5, 2007, pp. 1353, 1366.
+\newblock \doi{10.2514/1.27553}.
+
+\bibitem[{Acikmese et~al.(2008)Acikmese, Blackmore, Scharf, and
+  Wolf}]{enhancements2008}
+Acikmese, B., Blackmore, L., Scharf, D., and Wolf, A., \enquote{Enhancements on
+  the Convex Programming Based Powered Descent Guidance Algorithm for Mars
+  Landing,} \emph{AIAA/AAS Astrodynamics Specialist Conference and Exhibit,
+  Guidance, Navigation, and Control}, 2008.
+\newblock \doi{10.2514/6.2008-6426}.
+
+\bibitem[{Acikmese et~al.(2016)Acikmese, Carson, and Blackmore}]{becet2016}
+Acikmese, B., Carson, J., and Blackmore, L., \enquote{Successive
+  Convexification for Fuel-Optimal Powered Landing with Aerodynamic Drag and
+  Non-Convex Constraints,} \emph{AIAA SciTech Forum}, 2016.
+
+\bibitem[{Acikmese et~al.(2013)Acikmese, Carson, and Blackmore}]{blackmore2013}
+Acikmese, B., Carson, J., and Blackmore, L., \enquote{Lossless Convexification
+  of Nonconvex Control Bound Constraints of the Soft Landing Optimal Control
+  Problem,} \emph{IEEE Transactions on Control Systems Technology}, Vol.~21,
+  No.~6, 2013, p. 2104.
+
+\bibitem[{Stephen~Boyd(2009)}]{boyd}
+Stephen~Boyd, L.~V., \emph{Convex Optimization}, 2009.
+
+\end{thebibliography}

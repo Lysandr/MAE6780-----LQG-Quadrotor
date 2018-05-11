@@ -1,0 +1,17 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{The General Problemploen2007}{}% 2
+\BOOKMARK [1][-]{section.3}{Convexification of the Control Magnitude Constraint}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Change of Variables}{section.3}% 4
+\BOOKMARK [1][-]{section.4}{Discretization}{}% 5
+\BOOKMARK [1][-]{section.5}{2D Mars Landing Divert for Small Single-Engined Vehicle}{}% 6
+\BOOKMARK [1][-]{section.6}{3D Implementation of the Landing Algorithm}{}% 7
+\BOOKMARK [1][-]{section.7}{Time-of-Flight \(TOF\) Search}{}% 8
+\BOOKMARK [1][-]{section.8}{The Successive Convexification Approach}{}% 9
+\BOOKMARK [1][-]{section.9}{Future Work and Implementation of Successive Algorithm}{}% 10
+\BOOKMARK [1][-]{section.10}{Conclusion}{}% 11
+\BOOKMARK [1][-]{appendix.A}{APPENDIX}{}% 12
+\BOOKMARK [2][-]{subsection.A.1}{Problem 4 CVX Program}{appendix.A}% 13
+\BOOKMARK [2][-]{subsection.A.2}{2D Figures for Mars Landing With Glideslope Constraint}{appendix.A}% 14
+\BOOKMARK [2][-]{subsection.A.3}{2D Earth Landing of Falcon 9 Without Glideslope Constraint}{appendix.A}% 15
+\BOOKMARK [2][-]{subsection.A.4}{3D Mars Landing with Glideslope Constraint, Same Vehicle Parameters as 4, and TOF search}{appendix.A}% 16
+\BOOKMARK [2][-]{subsection.A.5}{Successive Algorithm Figures}{appendix.A}% 17

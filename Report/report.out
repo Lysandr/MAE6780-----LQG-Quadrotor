@@ -1,5 +1,10 @@
 \BOOKMARK [1][-]{section.1}{Introduction and Theory}{}% 1
-\BOOKMARK [1][-]{section.2}{Procedure}{}% 2
-\BOOKMARK [1][-]{section.3}{RESULTS}{}% 3
-\BOOKMARK [1][-]{section.4}{Conclusions}{}% 4
-\BOOKMARK [1][-]{section.5}{ref}{}% 5
+\BOOKMARK [2][-]{subsection.1.1}{Dynamics of the Quadrotor}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{LQG derivation}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Generating an Optimal Feedback Policy and Deriving the Riccati Equation via Dynamic Programming}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Derivation of the Optimal Estimator, Kalman Filter}{subsection.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.3}{Convex Optimization}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{Procedure}{}% 7
+\BOOKMARK [1][-]{section.3}{RESULTS}{}% 8
+\BOOKMARK [1][-]{section.4}{Conclusions}{}% 9
+\BOOKMARK [1][-]{section.5}{ref}{}% 10
