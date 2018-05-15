@@ -1,0 +1,35 @@
+\begin{thebibliography}{4}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi:\discretionary{}{}{}#1}\else
+  \providecommand{\doi}{doi:\discretionary{}{}{}\begingroup
+  \urlstyle{rm}\Url}\fi
+
+\bibitem[{Bouabdallah et~al.(2007)Bouabdallah, Murrieri, and
+  Siegward}]{ICRApaper}
+Bouabdallah, S., Murrieri, P., and Siegward, R., \enquote{Design and Control of
+  an Indoor Micro Quadrotor,} \emph{AIAA Journal of Guidance, Control, and
+  Dynamics}, Vol.~30, No.~5, 2007, pp. 1353, 1366.
+\newblock \doi{10.2514/1.27553}.
+
+\bibitem[{Stephen~Boyd(2009)}]{boyd}
+Stephen~Boyd, L.~V., \emph{Convex Optimization}, 2009.
+
+\bibitem[{Acikmese et~al.(2008)Acikmese, Blackmore, Scharf, and
+  Wolf}]{enhancements2008}
+Acikmese, B., Blackmore, L., Scharf, D., and Wolf, A., \enquote{Enhancements on
+  the Convex Programming Based Powered Descent Guidance Algorithm for Mars
+  Landing,} \emph{AIAA/AAS Astrodynamics Specialist Conference and Exhibit,
+  Guidance, Navigation, and Control}, 2008.
+\newblock \doi{10.2514/6.2008-6426}.
+
+\bibitem[{Acikmese and Ploen(2007)}]{ploen2007}
+Acikmese, B., and Ploen, S., \enquote{Convex Programming Approach to Powered
+  Descent Guidance for Mars Landing,} \emph{AIAA Journal of Guidance, Control,
+  and Dynamics}, Vol.~30, No.~5, 2007, pp. 1353, 1366.
+\newblock \doi{10.2514/1.27553}.
+
+\end{thebibliography}

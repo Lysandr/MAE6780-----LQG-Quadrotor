@@ -21,7 +21,7 @@ x_0=0;                      % position in x - axis
 dx_0=0;                     % linear velocity in x - axis
 y_0=0;                      % position in y - axis
 dy_0=0;                     % linear velocity in y - axis
-z_0=30;                     % position in z - axis
+z_0 = 30;                     % position in z - axis
 dz_0=0;                     % linear velocity in z - axis
 
 fi_0=0;                     % roll 

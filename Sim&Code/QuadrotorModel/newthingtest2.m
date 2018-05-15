@@ -28,8 +28,8 @@ P(1,1) = bigval^2;
 P(3,3) = bigval^2;
 P(5,5) = bigrval^2;
 P(11,11)=bigrval^2;
-dt = 0.01;
-tT = 50;
+dt = .05;
+tT = 100;
 tspan = tT:-dt:0;
 finalS = reshape(P,[16^2,1]);
 [t,S] = ode45(@(t,S) rhs(t,S,A,B,R,Q), tspan, finalS);
@@ -61,14 +61,24 @@ Sw = Sv;
 
 
 %% GENERATE THE TRAJECTORY TO FOLLOW 
-stateref = [35 0 35 0 50 0 0 0 0 0 0 0 0 0 0 0]';
-zrt = zeros(length(tspan),1);
-zrt2 = zeros(length(tspan),11);
-xtrain = x_0 + 1*sin((tT/20)*2*pi*(flipud(tspan')/tT));
-ytrain = y_0 + 1*cos((tT/20)*2*pi*(flipud(tspan')/tT));
-ztrain = z_0 + 1*(flipud(tspan')/tT);
-trajectory = [flipud(tspan') [xtrain zrt ytrain zrt ztrain zrt2] ];
+% stateref = [35 0 35 0 50 0 0 0 0 0 0 0 0 0 0 0]';
+% zrt = zeros(length(tspan),1);
+% zrt2 = zeros(length(tspan),11);
+% xtrain = x_0 + 1*sin((tT/20)*2*pi*(flipud(tspan')/tT));
+% ytrain = y_0 + 1*cos((tT/20)*2*pi*(flipud(tspan')/tT));
+% ztrain = z_0 + 1*(flipud(tspan')/tT);
+% trajectory = [flipud(tspan') [xtrain zrt ytrain zrt ztrain zrt2] ];
 
+
+%% convex stuff
+test_cvx
+tspancvx = 0:dt:tT;
+zrt = zeros(length(tspancvx),1);
+zrt2 = zeros(length(tspancvx),11);
+xtrain = r(1,:)';
+ytrain = r(2,:)';
+ztrain = r(3,:)';
+trajectory = [tspancvx' xtrain zrt ytrain zrt ztrain zrt2];
 
 
 %% DO THE SIMULATION!
@@ -97,7 +107,7 @@ toc
 % plot the trajectory
 figure;
 plot3(state.Data(:,1), state.Data(:,3), state.Data(:,5)); hold on;
-p = plot3(xtrain, ytrain,ztrain); hold on;
+p = plot3(xtrain,ytrain,ztrain); hold on;
 p.LineStyle = '-';
 start = plot3(state.Data(1,1), state.Data(1,3), state.Data(1,5)); hold on;
 start.Color = 'green';
@@ -111,25 +121,55 @@ xlabel('X distance (m)')
 ylabel('Y distance (m)')
 zlabel('Z distance (m)'); hold off;
 
+% ERROR in traj
+xerr = (state.Data(:,1)-xtrain)./xtrain;
+indices = find(abs(xerr) > 2);
+xerr(indices) = 0;
+yerr = (state.Data(:,3)-ytrain)./ytrain;
+indices = find(abs(yerr) > 2);
+yerr(indices) = 0;
+figure; subplot(3,1,1)
+plot(state.Time, xerr); title('x ERROR % vs time');
+subplot(3,1,2)
+plot(state.Time, yerr); title('y ERROR % vs time');
+subplot(3,1,3)
+plot(state.Time, (state.Data(:,5)-ztrain)./ztrain); title('z ERROR % vs  time');
+hold off;
+
+%estimation error
+xerr = (estimate.Data(:,1)-nonoise.Data(:,1))./nonoise.Data(:,1);
+indices = find(abs(xerr) > 2);
+xerr(indices) = 0;
+yerr = (estimate.Data(:,3)-nonoise.Data(:,3))./nonoise.Data(:,3);
+indices = find(abs(yerr) > 2);
+yerr(indices) = 0;
+figure; subplot(3,1,1)
+plot(estimate.Time, xerr); title('x_{est} ERROR % vs time');
+subplot(3,1,2)
+plot(estimate.Time, yerr); title('y_{est} ERROR % vs time');
+subplot(3,1,3)
+plot(estimate.Time, (estimate.Data(:,5)-nonoise.Data(:,5))./nonoise.Data(:,5)); title('z_{est} ERROR % vs  time');
+hold off;
+
 %STATES
 figure; subplot(6,1,1)
-plot(state.Time, state.Data(:,1)); title('x vs time'); hold on;
-plot(estimate.Time, estimate.Data(:,1)); title('x_est vs time')
+plot(state.Time, state.Data(:,1)); title('x vs time');
+hold on; plot(estimate.Time, estimate.Data(:,1)); title('x_est vs time')
 subplot(6,1,2)
-plot(state.Time, state.Data(:,3)); title('y vs time'); hold on;
-plot(estimate.Time, estimate.Data(:,3)); title('y_est vs time')
+plot(state.Time, state.Data(:,3)); title('y vs time');
+hold on; plot(estimate.Time, estimate.Data(:,3)); title('y_est vs time')
 subplot(6,1,3)
-plot(state.Time, state.Data(:,5)); title('z vs  time'); hold on;
-plot(estimate.Time, estimate.Data(:,5)); title('z_est vs  time')
+plot(state.Time, state.Data(:,5)); title('z vs  time');
+hold on; plot(estimate.Time, estimate.Data(:,5)); title('z_est vs  time')
 subplot(6,1,4)
-plot(state.Time, state.Data(:,7)); title('Phi vs time'); hold on;
-plot(estimate.Time, estimate.Data(:,7)); title('Phi_est vs time')
+plot(state.Time, state.Data(:,7)); title('Phi vs time'); 
+hold on; plot(estimate.Time, estimate.Data(:,7)); title('Phi_est vs time')
 subplot(6,1,5)
-plot(state.Time, state.Data(:,9)); title('Theta vs time'); hold on;
-plot(estimate.Time, estimate.Data(:,9)); title('Theta_est vs time')
+plot(state.Time, state.Data(:,9)); title('Theta vs time');
+hold on; plot(estimate.Time, estimate.Data(:,9)); title('Theta_est vs time')
 subplot(6,1,6)
-plot(state.Time, state.Data(:,11)); title('Psi vs time'); hold on;
-plot(estimate.Time, estimate.Data(:,11)); title('Psi_est vs time')
+plot(state.Time, state.Data(:,11)); title('Psi vs time'); 
+hold on;plot(estimate.Time, estimate.Data(:,11)); title('Psi_est vs time')
 hold off;
 legend('State Observation','State Estimation')
 
